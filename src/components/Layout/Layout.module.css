@@ -1,0 +1,10 @@
+.layout {
+    margin-bottom: 36px;
+}
+
+.logo {
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 38px;
+    color: #9d8640;
+}

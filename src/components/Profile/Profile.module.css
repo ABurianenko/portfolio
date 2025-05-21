@@ -1,0 +1,141 @@
+.profile {
+    position: relative;
+    width: 369px;
+}
+
+.wrapper {
+    border: 3px solid #b7a261;
+    border-radius: 13px;
+    width: 100%;
+    height: 696px;
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 14px;
+
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #000;
+
+    margin-top: 148px;
+    margin-bottom: 10px;
+}
+
+.position {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+
+    border: 1px solid #b7a261;
+    border-radius: 6px;
+    width: 193px;
+    height: 38px;
+    background: #fef6dd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 34px;
+}
+
+.networkList {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    margin-bottom: 40px;
+}
+
+.networkItem {
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #3662E3;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.contactsList {
+    border-radius: 12px;
+    width: 284px;
+    height: 248px;
+    background: #f9f6ea;
+
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.contactsItem {
+    display: flex;
+    gap: 20px;
+    padding: 11px 0;
+
+    align-items: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.contactsItem:last-child {
+    border-bottom: none;
+}
+
+.contactsIcon {
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    background: #d9d9d9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+}
+
+.resumeLink {
+    border: 2px solid #b7a261;
+    border-radius: 8px;
+    width: 200px;
+    height: 49px;
+    background: #e0ce93;
+
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 21px;
+    color: #403d22;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
