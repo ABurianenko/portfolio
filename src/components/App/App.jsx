@@ -2,8 +2,18 @@ import { Route, Routes, Navigate } from 'react-router-dom'
 import {About} from '../../pages/About/About'
 import './App.css'
 import { Layout } from '../Layout/Layout'
+import { useSelector } from 'react-redux'
+import { themeSelect } from '../../redux/theme/selectors'
+import { useEffect } from 'react'
 
 function App() {
+  const theme = useSelector(themeSelect);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
   return (
     <div>
       <Layout>

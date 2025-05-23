@@ -4,11 +4,11 @@
 }
 
 .wrapper {
-    border: 3px solid #b7a261;
+    border: 3px solid var(--border-color);
     border-radius: 13px;
     width: 100%;
     height: 696px;
-    background: #fff;
+    background-color: var(--containerbg);
 
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 26px;
-    color: #000;
+    color: var(--text-color);
 
     margin-top: 148px;
     margin-bottom: 10px;
@@ -41,13 +41,13 @@
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #000;
+    color: var(--text-color);
 
-    border: 1px solid #b7a261;
+    border: 1px solid var(--border-color);
     border-radius: 6px;
     width: 193px;
     height: 38px;
-    background: #fef6dd;
+    background-color: var(--bgcolor);
 
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@ svg {
     border-radius: 12px;
     width: 284px;
     height: 248px;
-    background: #f9f6ea;
+    background-color: var(--contactsbg);
 
     padding: 10px 20px;
     margin-bottom: 30px;
@@ -109,7 +109,8 @@ svg {
     border-radius: 4px;
     width: 35px;
     height: 35px;
-    background: #d9d9d9;
+    background-color: var(--contacts-icon-bg);
+    color: var(--text-color);
 
     display: flex;
     align-items: center;
@@ -120,20 +121,20 @@ svg {
     font-family: var(--second-family);
     font-weight: 500;
     font-size: 15px;
-    color: #000;
+    color: var(--text-color);
 }
 
 .resumeLink {
-    border: 2px solid #b7a261;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
     width: 200px;
     height: 49px;
-    background: #e0ce93;
+    background-color: var(--buttonbg);
 
     font-family: var(--third-family);
     font-weight: 700;
     font-size: 21px;
-    color: #403d22;
+    color: var(--button-text-color);
 
     display: flex;
     align-items: center;

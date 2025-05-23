@@ -1,0 +1,8 @@
+.themeBtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: var(--nav-link-bg);
+    border: none;
+    color: var(--containerbg);
+}

@@ -2,9 +2,14 @@
     margin-bottom: 36px;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo {
     font-family: var(--font3);
     font-weight: 400;
     font-size: 38px;
-    color: #9d8640;
+    color: var(--logo-color);
 }
