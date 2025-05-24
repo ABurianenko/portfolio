@@ -6,6 +6,5 @@ export const About = () => {
         <div>
             <Summary />
         </div>
-        
     )
 }

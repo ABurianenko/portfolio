@@ -51,12 +51,15 @@ a {
   --logo-color: #9D8640;
   --text-color: #000;
   --button-text-color: #403D22;
+  --service-item-bg: #fdf4f4;
+  --service-title-color: #000;
+  --service-desc-color: #685d5d;
 }
 
 [data-theme='dark'] {
   --bgcolor: #131312;
   --containerbg: #000000;
-  --border-color: #4B3D10;
+  --border-color: #382f12;
   --buttonbg: #C2B293;
   --nav-link-bg: #B7A261;
   --contactsbg: #3B3729;
@@ -64,4 +67,7 @@ a {
   --logo-color: #7F6F3E;
   --text-color: #CCC0C0;
   --button-text-color: #3B3729;
+  --service-item-bg: #60594b;
+  --service-title-color: #fff;
+  --service-desc-color: #d1d1cd;
 }

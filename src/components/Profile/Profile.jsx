@@ -7,7 +7,7 @@ import s from './Profile.module.css'
 export const Profile = () => {
     return (
         <div className={s.profile}>
-            <img className={s.avatar} src="/public/photo_2025-05-21_17-07-50.jpg" alt="avatar" />
+            <img className={s.avatar} src="/public/images/photo_2025-05-21_17-07-50.jpg" alt="avatar" />
             <div className={s.wrapper}>
                 <h1 className={s.name}>Anastasiia Burianenko</h1>
                 <p className={s.position}>Front-End Developer</p>

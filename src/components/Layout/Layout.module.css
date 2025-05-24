@@ -1,10 +1,7 @@
-.layout {
-    margin-bottom: 36px;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -12,4 +9,12 @@
     font-weight: 400;
     font-size: 38px;
     color: var(--logo-color);
+}
+
+.layout {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+
+    margin-top: 40px;
 }

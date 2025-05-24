@@ -6,19 +6,26 @@ import { SwitchTheme } from '../SwitchTheme/SwitchTheme'
 
 export const Layout = ({ children }) => {
     return (
-        <div className={s.layout}>
+        <div>
             <header className={s.header}>
                 <p className={s.logo}>PortFolio</p>
                 <SwitchTheme />
             </header>
             
-            <aside>
-                <Profile />
-            </aside>
-            <Suspense fallback={null}>{children}</Suspense>
-            <aside>
-                <AppBar />
-            </aside>
+            <div className={s.layout}>
+                <aside>
+                    <Profile />
+                </aside>
+
+                <main>
+                    <Suspense fallback={null}>{children}</Suspense>
+                </main>
+                
+                <aside>
+                    <AppBar />
+                </aside>
+            </div>
+            
         </div>
     )
 }

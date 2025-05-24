@@ -1,8 +1,88 @@
 .summaryWrapper {
-    border: 3px solid #b7a261;
+    border: 3px solid var(--border-color);
     border-radius: 14px;
-    width: 912px;
-    height: 961px;
 
-    background: #fff;
+    padding: 30px 44px;
+    
+    background-color: var(--containerbg);
+}
+
+.sectionTitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--text-color);
+
+    margin-bottom: 10px;
+}
+
+.sectionText {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 20px;
+    
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 1.3;
+    
+}
+
+.sectionSubtitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--text-color);
+
+    margin-bottom: 16px;
+}
+
+.servicesList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 34px;
+}
+
+.servicesList_item {
+    display: grid;
+
+    border: 3px solid var(--border-color);
+    border-radius: 9px;
+    background-color: var(--service-item-bg);
+
+    grid-template-columns: 116px auto;
+    gap: 14px;
+    grid-template-areas: 
+    "i t"
+    "i d";
+}
+
+.servicesList_img {
+    grid-area: i;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 8px 0 0 8px;
+}
+
+.servicesList_title {
+    grid-area: t;
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--service-title-color);
+
+    align-self: end;
+}
+
+.servicesList_description {
+    grid-area: d;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--service-desc-color);
 }
