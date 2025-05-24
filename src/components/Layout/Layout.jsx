@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { Profile } from '../Profile/Profile'
 import s from './Layout.module.css'
 import { AppBar } from '../AppBar/AppBar'
-import { SwitchTheme } from '../SwitchTheme/SwitchTheme'
+import { SwitchTheme } from '../../ui/SwitchTheme/SwitchTheme'
 
 export const Layout = ({ children }) => {
     return (
