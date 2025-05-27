@@ -1,27 +1,32 @@
 import { FaFileLines } from "react-icons/fa6";
 
+import s from './Education.module.css'
+
 export const Education = () => {
     return (
         <div>
             <h2>Education</h2>
-            <ul>
-                <li>
-                    <p>2024-2025</p>
-                    <h4>IT School GoIT</h4>
-                    <h5>Fullstack Developer</h5>
+            <ul className={s.education_list}>
+                <li className={`${s.education_item} ${s.course}`}>
+                    <div className={s.course_desc}>
+                        <p className={s.education_text}>2024-2025</p>
+                        <h4 className={s.education_school}>IT School GoIT</h4>
+                        <p className={s.education_text}>Fullstack Developer</p>
+                    </div>
+                    
                     <a href="/public/Anastasiia_Burianenko_certificate.pdf" target="_blank" rel="noopener noreferrer">
-                        <FaFileLines />
+                        <FaFileLines  className={s.certificate} />
                     </a>
                 </li>
-                <li>
-                    <p>2018-2020</p>
-                    <h4>Kyiv National Economics University</h4>
-                    <h5>Master’s Degree, Accounting and taxation</h5>
+                <li className={`${s.education_item} ${s.master}`}>
+                    <p className={s.education_text}>2018-2020</p>
+                    <h4 className={s.education_school}>Kyiv National Economics University</h4>
+                    <p className={s.education_text}>Master’s Degree, Accounting and taxation</p>
                 </li>
-                <li>
-                    <p>2014-2018</p>
-                    <h4>Kyiv National Economics University</h4>
-                    <h5>Bachelor’s Degree, Economics of Enterprise</h5>
+                <li className={`${s.education_item} ${s.bachelor}`}>
+                    <p className={s.education_text}>2014-2018</p>
+                    <h4 className={s.education_school}>Kyiv National Economics University</h4>
+                    <p className={s.education_text}>Bachelor’s Degree, Economics of Enterprise</p>
                 </li>
             </ul>
         </div>

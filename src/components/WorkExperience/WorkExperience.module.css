@@ -1,0 +1,75 @@
+.work {
+    border: 3px solid var(--submit-btn);
+    border-radius: 9px;
+    padding: 16px;
+
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: 124px auto;
+    grid-template-areas: 
+    'logo company'
+    'logo role'
+    'logo duration'
+    'desc desc';
+    gap: 20px;
+}
+
+.work_logo {
+    grid-area: logo;
+    border: 2px solid var(--submit-btn);
+    border-radius: 8px;
+
+    align-self: center;
+
+    background-color: var(--contactsbg);
+}
+
+.work_company {
+    grid-area: company;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--service-title-color);
+}
+
+.work_role {
+    grid-area: role;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--service-title-color);
+}
+
+.work_duration {
+    grid-area: duration;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--service-title-color);
+}
+
+span {
+    font-weight: 700;
+}
+
+.work_desc {
+    grid-area: desc;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--service-desc-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.work_desc_list {
+    margin-left: 36px;
+    list-style-type: disc;
+}

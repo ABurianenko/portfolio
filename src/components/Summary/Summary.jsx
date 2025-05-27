@@ -23,7 +23,7 @@ export const Summary = () => {
             <h3 className={s.sectionSubtitle}>What I Do</h3>
             <ul className={s.servicesList}>
                 <li className={s.servicesList_item}>
-                    <img className={s.servicesList_img} src="public/images/service1-min.jpg" alt="front-end" />
+                    <img className={s.servicesList_img} src="/images/service1-min.jpg" alt="front-end" />
                     <h4 className={s.servicesList_title}>Web Front-End Development</h4>
                     <p className={s.servicesList_description}>
                         I build responsive and accessible user interfaces using React.js and modern web technologies. 
@@ -31,7 +31,7 @@ export const Summary = () => {
                     </p>
                 </li>
                 <li className={s.servicesList_item}>
-                    <img className={s.servicesList_img} src="public/images/service2-min.jpg" alt="UI/UX" />
+                    <img className={s.servicesList_img} src="/images/service2-min.jpg" alt="UI/UX" />
                     <h4 className={s.servicesList_title}>Back-End Development</h4>
                     <p className={s.servicesList_description}>
                         During my fullstack course, I developed several backend projects using Node.js, Express, and MongoDB.
@@ -39,7 +39,7 @@ export const Summary = () => {
                     </p>
                 </li>
                 <li className={s.servicesList_item}>
-                    <img className={s.servicesList_img} src="public/images/service3-min.jpg" alt="back-end" />
+                    <img className={s.servicesList_img} src="/images/service3-min.jpg" alt="back-end" />
                     <h4 className={s.servicesList_title}>UI/UX Designing</h4>
                     <p className={s.servicesList_description}>
                         I can suggest and implement small design improvements to make interfaces more user-friendly,

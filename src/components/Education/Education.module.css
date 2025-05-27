@@ -1,0 +1,63 @@
+.education_list {
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'course course'
+    'master bachelor';
+    gap: 20px 38px;
+}
+
+.education_item {
+    border: 3px solid var(--submit-btn);
+    border-radius: 9px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.course {
+    grid-area: course;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course_desc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.certificate {
+    width: 48px;
+    height: 48px;
+    color: var(--service-desc-color);
+}
+
+.master {
+    grid-area: master;
+}
+
+.bachelor {
+    grid-area: bachelor;
+}
+
+.education_text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--service-title-color);
+}
+
+.education_school {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--service-title-color);
+}
