@@ -14,12 +14,12 @@ export const Profile = () => {
                 <ul className={s.networkList}>
                     <li className={s.networkItem}>
                         <a href="https://www.linkedin.com/in/anastasiia-burianenko/">
-                            <IoLogoLinkedin />
+                            <IoLogoLinkedin className={s.linkedin} />
                         </a>
                     </li>
                     <li className={s.networkItem}>
                         <a href="https://github.com/ABurianenko">
-                            <IoLogoGithub />
+                            <IoLogoGithub className={s.github} />
                         </a>
                     </li>
                 </ul>
