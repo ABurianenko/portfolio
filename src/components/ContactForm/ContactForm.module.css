@@ -1,0 +1,47 @@
+.form {
+    margin-top: 44px;
+    margin-bottom: 92px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form_label {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--service-title-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 820px;
+}
+
+.form_field {
+    border: 2px solid var(--form-border-color);
+    border-radius: 7px;
+    height: 55px;
+    background-color: inherit;
+}
+
+.form_field[name="message"] {
+    height: 180px;
+}
+
+.submitBtn {
+    border: 2px solid var(--submit-btn);
+    border-radius: 8px;
+    width: 200px;
+    height: 49px;
+
+    background-color: var(--submit-btn);
+
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--containerbg);
+
+    align-self: end;
+}

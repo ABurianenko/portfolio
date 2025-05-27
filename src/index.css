@@ -12,6 +12,7 @@
 }
 
 body {
+  max-width: 1728px;
   background-color: var(--bgcolor);
   padding: 36px 108px;
 }
@@ -33,6 +34,13 @@ a {
   cursor: pointer;
 }
 
+h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--text-color);
+}
+
 :root {
   --font-family: "Poppins", sans-serif;
   --second-family: "Inter", sans-serif;
@@ -51,9 +59,12 @@ a {
   --logo-color: #9D8640;
   --text-color: #000;
   --button-text-color: #403D22;
-  --service-item-bg: #fdf4f4;
+  --service-item-bg: #fdf4f4; 
   --service-title-color: #000;
   --service-desc-color: #685d5d;
+  --form-border-color: #9d8640;
+  --submit-btn: #b7a261;
+  --skills-shadow: #f8df91;
 }
 
 [data-theme='dark'] {
@@ -70,4 +81,16 @@ a {
   --service-item-bg: #60594b;
   --service-title-color: #fff;
   --service-desc-color: #d1d1cd;
+  --form-border-color: #9d8640;
+  --submit-btn: #4b3d10;
+  --skills-shadow: #efe0b2;
+}
+
+.container {
+  border: 3px solid var(--border-color);
+  border-radius: 14px;
+
+  padding: 30px 44px;
+
+  background-color: var(--containerbg);
 }

@@ -2,8 +2,8 @@ import s from './Summary.module.css'
 
 export const Summary = () => {
     return (
-        <div className={s.summaryWrapper}>
-            <h2 className={s.sectionTitle}>About</h2>
+        <div className="container">
+            <h2>About</h2>
             <div className={s.sectionText}>
                 <p>I am a passionate tech enthusiast with a deep interest in Web and App
                     Development. Currently, I am pursuing a B.Tech in Information Technology at CSPIT, CHARUSAT, and am gaining valuable experience as an SDE Intern at Compnay A. I possess expertise in Flutter Development, UI/UX Design, React.js, and Tailwind CSS for web development, as well as Node.js and Express.js for robust backend solutions.</p>

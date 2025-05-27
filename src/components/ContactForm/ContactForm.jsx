@@ -3,6 +3,8 @@ import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
 import toast from "react-hot-toast";
 
+import s from './ContactForm.module.css';
+
 export const ContactForm = () => {
     const initialValues = {
         name: '',
@@ -45,31 +47,36 @@ export const ContactForm = () => {
     })
 
     return (
-        <Formik
-            initialValues={initialValues}
-            onSubmit={handleSubmit}
-            validationSchema={validationSchema}
-        >
-            <Form>
-                <label>
-                    Name
-                    <Field type="text" name="name" />
-                    <ErrorMessage name="name" component="div" />
-                </label>
-                <label>
-                    Email
-                    <Field type="email" name="email" />
-                    <ErrorMessage name="email" component="div" />
-                </label>
-                <label>
-                    Subject
-                    <Field type="text" name="subject" />
-                </label>
-                <label>
-                    Message
-                    <Field as="textarea" name="message" />
-                </label>
-            </Form>
-        </Formik>
+        <div className="container">
+            <h2>Contact Me</h2>
+            <Formik
+                initialValues={initialValues}
+                onSubmit={handleSubmit}
+                validationSchema={validationSchema}
+            >
+                <Form className={s.form}>
+                    <label className={s.form_label}>
+                        Name
+                        <Field className={s.form_field} type="text" name="name" />
+                        <ErrorMessage name="name" component="div" />
+                    </label>
+                    <label className={s.form_label}>
+                        Email
+                        <Field className={s.form_field} type="email" name="email" />
+                        <ErrorMessage name="email" component="div" />
+                    </label>
+                    <label className={s.form_label}>
+                        Subject
+                        <Field className={s.form_field} type="text" name="subject" />
+                    </label>
+                    <label className={s.form_label}>
+                        Message
+                        <Field className={s.form_field} as="textarea" name="message" />
+                    </label>
+                    <button className={s.submitBtn} type="submit">Submit</button>
+                </Form>
+            </Formik>
+        </div>
+        
     )
 }
