@@ -1,0 +1,178 @@
+[
+    {
+        "id": 1,
+        "name": "RentalCar",
+        "shortDescription": "RentalCar is a web application for viewing and booking cars.",
+        "fullDescription": "RentalCar is a web application for viewing and booking cars. Users can filter cars by brand, price and mileage, view detailed information about each car and make a reservation through a convenient form.",
+        "features": [
+            "📋 Car catalog with the ability to filter by brand, price and mileage",
+            "🔍 Detailed car page with description and image",
+            "📅 Booking form with date selection and validation of entered data",
+            "🔄 Clear filters button appears after applying filters",
+            "🔗 Navigation with the ability to return to the previous page"
+        ],
+        "stack": [
+            {
+                "tech": "React",
+                "usage": "Core UI library"
+            },
+            {
+                "tech": "Redux Toolkit",
+                "usage": "State management"
+            },
+            {
+                "tech": "React Router DOM",
+                "usage": "Client-side routing"
+            },
+            {
+                "tech": "Formik + Yup",
+                "usage": "Form handling and validation"
+            },
+            {
+                "tech": "Axios",
+                "usage": "HTTP requests"
+            },
+            {
+                "tech": "React Datepicker",
+                "usage": "Date selection for bookings"
+            },
+            {
+                "tech": "React Toastify / React Hot Toast",
+                "usage": "User notifications"
+            },
+            {
+                "tech": "React Icons / React Spinners",
+                "usage": "UI enhancements"
+            }
+        ],
+        "image": "/images/projects/Home.jpg",
+        "link": "https://rental-car-one-sooty.vercel.app/",
+        "gitHub": "https://github.com/ABurianenko/rentalCar",
+        "role": "Individual project"
+    },
+    {
+        "id": 2,
+        "name": "Cathouse",
+        "shortDescription": "A minimalist landing page about cats",
+        "fullDescription": "A minimalist landing page crafted with HTML and CSS, developed to practice responsive layout design using CSS Grid. The project demonstrates how to structure and align content effectively across screen sizes, without relying on JavaScript or interactive UI features.",
+        "features": [
+            "🎨 Stylish and modern landing page layout",
+            "📱 Fully responsive design for mobile, tablet, and desktop",
+            "🚀 Smooth scrolling and simple animations"
+        ],
+        "stack": [
+            {
+                "tech": "HTML5",
+                "usage": "Markup structure"
+            },
+            {
+                "tech": "CSS3",
+                "usage": "Styling and layout (CSS Grid)"
+            }
+        ],
+        "image": "/images/projects/Cathouse.png",
+        "link": "https://aburianenko.github.io/Cathouse/",
+        "gitHub": "https://github.com/ABurianenko/Cathouse",
+        "role": "Individual project"
+    },
+    {
+        "id": 3,
+        "name": "ContactBook App",
+        "shortDescription": "RESTful Node.js API with MongoDB backend and Swagger API docs, deployed on Render.",
+        "fullDescription": "This project is a RESTful API built using Node.js and Express, with MongoDB as the database layer managed through Mongoose. It supports full CRUD operations and includes detailed API documentation via Swagger UI. The project is deployed on Render for easy accessibility. Ideal for backend API development and MongoDB integration practice.",
+        "features": [
+            "🔄 CRUD operations for managing contacts",
+            "🔐 User authentication and authorization",
+            "🌐 OAuth support for authentication",
+            "📄 Swagger documentation for API endpoints",
+            "🚨 Error handling and validation"
+        ],
+        "stack": [
+            {
+                "tech": "Node.js",
+                "usage": "Backend runtime environment"
+              },
+              {
+                "tech": "Express.js",
+                "usage": "Web framework for building APIs"
+              },
+              {
+                "tech": "MongoDB",
+                "usage": "NoSQL database for data storage"
+              },
+              {
+                "tech": "Mongoose",
+                "usage": "MongoDB object modeling for Node.js"
+              },
+              {
+                "tech": "Swagger UI",
+                "usage": "API documentation and testing"
+              },
+              {
+                "tech": "OAuth",
+                "usage": "Authentication and authorization protocol"
+              },
+              {
+                "tech": "JWT",
+                "usage": "Token-based user authentication"
+              },
+              {
+                "tech": "Render",
+                "usage": "Cloud hosting and deployment"
+              }
+        ],
+        "image": "/images/projects/Cathouse.png",
+        "link": "https://nodejs-hw-mongodb-3nyw.onrender.com/api-docs",
+        "gitHub": "https://github.com/ABurianenko/nodejs-hw-mongodb/tree/hw7-swagger",
+        "role": "Individual project"
+    },
+    {
+        "id": 4,
+        "name": "Image Search App",
+        "shortDescription": "A minimalist landing page about cats",
+        "fullDescription": "A minimalist landing page crafted with HTML and CSS, developed to practice responsive layout design using CSS Grid. The project demonstrates how to structure and align content effectively across screen sizes, without relying on JavaScript or interactive UI features.",
+        "features": [
+            "🎨 Stylish and modern landing page layout",
+            "📱 Fully responsive design for mobile, tablet, and desktop",
+            "🚀 Smooth scrolling and simple animations"
+        ],
+        "stack": [
+            {
+                "tech": "HTML5",
+                "usage": "Markup structure"
+            },
+            {
+                "tech": "CSS3",
+                "usage": "Styling and layout (CSS Grid)"
+            }
+        ],
+        "image": "/images/projects/Cathouse.png",
+        "link": "https://aburianenko.github.io/Cathouse/",
+        "gitHub": "https://github.com/ABurianenko/Cathouse",
+        "role": "Individual project"
+    },
+    {
+        "id": 5,
+        "name": "Image Search App",
+        "shortDescription": "A minimalist landing page about cats",
+        "fullDescription": "A minimalist landing page crafted with HTML and CSS, developed to practice responsive layout design using CSS Grid. The project demonstrates how to structure and align content effectively across screen sizes, without relying on JavaScript or interactive UI features.",
+        "features": [
+            "🎨 Stylish and modern landing page layout",
+            "📱 Fully responsive design for mobile, tablet, and desktop",
+            "🚀 Smooth scrolling and simple animations"
+        ],
+        "stack": [
+            {
+                "tech": "HTML5",
+                "usage": "Markup structure"
+            },
+            {
+                "tech": "CSS3",
+                "usage": "Styling and layout (CSS Grid)"
+            }
+        ],
+        "image": "/images/projects/Cathouse.png",
+        "link": "https://aburianenko.github.io/Cathouse/",
+        "gitHub": "https://github.com/ABurianenko/Cathouse"
+    }
+]

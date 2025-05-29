@@ -12,8 +12,10 @@
 }
 
 .layout {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     gap: 52px;
 
     margin-top: 40px;
 }
+

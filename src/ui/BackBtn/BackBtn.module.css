@@ -1,0 +1,18 @@
+.backBtn {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--service-desc-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 36px;
+    padding: 4px 16px;
+    margin-bottom: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+
+    background-color: var(--bgcolor);
+}

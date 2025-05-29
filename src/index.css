@@ -15,6 +15,11 @@ body {
   max-width: 1728px;
   background-color: var(--bgcolor);
   padding: 36px 108px;
+  justify-self: center;
+}
+
+main {
+  width: 100%;
 }
 
 img {
@@ -65,6 +70,7 @@ h2 {
   --form-border-color: #9d8640;
   --submit-btn: #b7a261;
   --skills-shadow: #f8df91;
+  --project-card-bg: #f9f6ea;
 }
 
 [data-theme='dark'] {
@@ -84,6 +90,7 @@ h2 {
   --form-border-color: #9d8640;
   --submit-btn: #4b3d10;
   --skills-shadow: #efe0b2;
+  --project-card-bg: #403d32;
 }
 
 .container {

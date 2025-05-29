@@ -1,0 +1,15 @@
+.projects {
+    margin-top: 28px;
+    gap: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}

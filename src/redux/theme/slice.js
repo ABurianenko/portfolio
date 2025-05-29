@@ -5,7 +5,7 @@ const getInitialTheme = () => {
   };
 
 const initialState = {
-    mode: getInitialTheme,
+    mode: getInitialTheme(),
 };
 
 const themeSlice = createSlice({

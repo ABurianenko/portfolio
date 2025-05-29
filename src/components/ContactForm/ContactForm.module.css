@@ -15,13 +15,14 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 820px;
+    width: 100%;
 }
 
 .form_field {
     border: 2px solid var(--form-border-color);
     border-radius: 7px;
     height: 55px;
+    width: 100%;
     background-color: inherit;
 }
 
