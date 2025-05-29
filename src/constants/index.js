@@ -1,7 +1,7 @@
 export const TECH_SKILLS = [
     {
         "name": "JavaScript",
-        "logo": "/public/svg/symbol-defs.svg#icon-javascript-icon"
+        "logo": "/svg/symbol-defs.svg#icon-javascript-icon"
     },
     {
         "name": "React",
