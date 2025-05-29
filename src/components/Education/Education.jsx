@@ -14,7 +14,7 @@ export const Education = () => {
                         <p className={s.education_text}>Fullstack Developer</p>
                     </div>
                     
-                    <a href="/public/Anastasiia_Burianenko_certificate.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/docs/Anastasiia_Burianenko_certificate.pdf" target="_blank" rel="noopener noreferrer">
                         <FaFileLines  className={s.certificate} />
                     </a>
                 </li>

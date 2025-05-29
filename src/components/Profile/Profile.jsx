@@ -55,7 +55,7 @@ export const Profile = () => {
                         <p className={s.contacts}>Lisbon, Portugal</p>
                     </li>
                 </ul>
-                <a className={s.resumeLink} href="/public/Anastasiia_Burianenko_FrontendDeveloper.pdf" target="_blank" rel="noopener noreferrer">View Resume</a> 
+                <a className={s.resumeLink} href="/docs/Anastasiia_Burianenko_FrontendDeveloper.pdf" target="_blank" rel="noopener noreferrer">View Resume</a> 
             </div>
             
         </div>
