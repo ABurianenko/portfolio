@@ -47,7 +47,7 @@ export const ContactForm = () => {
     })
 
     return (
-        <div className="container">
+        <div>
             <h2>Contact Me</h2>
             <Formik
                 initialValues={initialValues}
@@ -58,12 +58,12 @@ export const ContactForm = () => {
                     <label className={s.form_label}>
                         Name
                         <Field className={s.form_field} type="text" name="name" />
-                        <ErrorMessage name="name" component="div" />
+                        <ErrorMessage className={s.form_error} name="name" component="div" />
                     </label>
                     <label className={s.form_label}>
                         Email
                         <Field className={s.form_field} type="email" name="email" />
-                        <ErrorMessage name="email" component="div" />
+                        <ErrorMessage className={s.form_error} name="email" component="div" />
                     </label>
                     <label className={s.form_label}>
                         Subject

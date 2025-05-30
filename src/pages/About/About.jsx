@@ -2,7 +2,7 @@ import { Summary } from "../../components/Summary/Summary"
 
 export const About = () => {
     return (
-        <div>
+        <div className="container">
             <Summary />
         </div>
     )

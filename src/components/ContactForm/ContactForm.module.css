@@ -1,5 +1,7 @@
 .form {
     margin-top: 44px;
+    width: 100%;
+    max-width: 824px;
 
     display: flex;
     flex-direction: column;
@@ -44,4 +46,9 @@
     color: var(--containerbg);
 
     align-self: end;
+}
+
+.form_error {
+    color: red;
+    font-size: 14px;
 }

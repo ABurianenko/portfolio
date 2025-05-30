@@ -100,4 +100,6 @@ h2 {
   padding: 30px 44px;
 
   background-color: var(--containerbg);
+  width: 100%;
+  max-width: 913px;
 }
