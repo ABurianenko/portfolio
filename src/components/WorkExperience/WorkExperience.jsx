@@ -6,7 +6,7 @@ export const WorkExperience = () => {
             <h2>Experience</h2> 
             <div className={s.work}>
                 <img className={s.work_logo} src="/images/Logo_Intertop.png" alt="Intertop Company Logo" />
-                <h4 className={s.work_company}>Company: Intertop Ukraine, LLC</h4>
+                <h4 className={s.work_company}><span>Company: </span>Intertop Ukraine, LLC</h4>
                 <p className={s.work_role}><span>Role: </span>Deputy Chief Accountant</p>
                 <p className={s.work_duration}><span>Duration: </span>June, 2019 - July, 2023</p>
                 <div className={s.work_desc}>

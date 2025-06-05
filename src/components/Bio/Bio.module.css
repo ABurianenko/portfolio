@@ -6,26 +6,39 @@
     
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-color);
     line-height: 1.3;
     
     margin-top: 10px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .sectionSubtitle {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--text-color);
 
     margin-bottom: 16px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 .servicesList {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px 34px;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 34px;
+    }
 }
 
 .servicesList_item {
@@ -40,6 +53,11 @@
     grid-template-areas: 
     "i t"
     "i d";
+
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: 116px auto;
+        gap: 14px
+    }
 }
 
 .servicesList_img {
@@ -66,6 +84,6 @@
 
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--service-desc-color);
 }

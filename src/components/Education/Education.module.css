@@ -2,16 +2,23 @@
     margin-top: 20px;
     margin-bottom: 32px;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    'course course'
-    'master bachelor';
-    gap: 20px 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            'course course'
+            'master bachelor';
+        gap: 20px 38px;
+    }
 }
 
 .education_item {
     border: 3px solid var(--submit-btn);
+    background-color: var(--containerbg);
     border-radius: 9px;
     padding: 16px;
     display: flex;
@@ -51,13 +58,21 @@
 .education_text {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     color: var(--service-title-color);
+
+    @media only screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .education_school {
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--service-title-color);
+
+    @media only screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 }

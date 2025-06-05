@@ -17,28 +17,28 @@ export const Profile = () => {
                         <h1 className={s.name}>Anastasiia Burianenko</h1>
                         <p className={s.position}>Front-End Developer</p>
                         <ul className={s.networkList}>
-                            <li className={s.contactsItem}>
-                                <a className={s.contacts} href="tel:+380636485625">
+                            <li className={s.networkItem}>
+                                <a className={s.networkLink} href="tel:+380636485625">
                                     <CiMobile1 />
                                 </a>
                             </li>
-                            <li className={s.contactsItem}>
-                                <a className={s.contacts} href="tel:+351914640057">
+                            <li className={s.networkItem}>
+                                <a className={s.networkLink} href="tel:+351914640057">
                                     <CiMobile1 />
                                 </a>
                             </li>
-                            <li className={s.contactsItem}>
-                                <a className={s.contacts} href="mailto:aburianenko@gmail.com">
+                            <li className={s.networkItem}>
+                                <a className={s.networkLink} href="mailto:aburianenko@gmail.com">
                                     <IoMailUnreadOutline />
                                 </a>
                             </li>
                             <li className={s.networkItem}>
-                                <a href="https://www.linkedin.com/in/anastasiia-burianenko/">
+                                <a className={s.networkLink} href="https://www.linkedin.com/in/anastasiia-burianenko/">
                                     <IoLogoLinkedin />
                                 </a>
                             </li>
                             <li className={s.networkItem}>
-                                <a href="https://github.com/ABurianenko">
+                                <a className={s.networkLink} href="https://github.com/ABurianenko">
                                     <IoLogoGithub />
                                 </a>
                             </li>

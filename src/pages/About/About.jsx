@@ -1,5 +1,5 @@
 import { Profile } from "../../components/Profile/Profile";
-import { Summary } from "../../components/Summary/Summary"
+import {Bio} from "../../components/Bio/Bio"
 import { useMediaPoints } from "../../hooks/useMediaPoints"
 
 export const About = () => {
@@ -10,11 +10,11 @@ export const About = () => {
             {isMobile ? (
                 <div>
                     <Profile />
-                    <Summary />
+                    <Bio />
                 </div>
             ) : (
                 <div className="container">
-                    <Summary />
+                    <Bio />
                 </div>   
             )}
         </>

@@ -6,64 +6,87 @@
 .wrapper {
     border: 3px solid var(--border-color);
     border-radius: 13px;
-    width: 100%;
+    /* width: 100%; */
     margin-top: 58px;
+    margin-bottom: 36px;
     padding-bottom: 35px;
 
     background-color: var(--containerbg);
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .avatar {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
 
     border-radius: 14px;
 
     position: absolute;
-    top: -60px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
+
+    @media only screen and (min-width: 768px) {
+        top: -60px;
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .name {
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 18px;
     color: var(--text-color);
 
-    margin-top: 148px;
+    margin-top: 96px;
     margin-bottom: 10px;
+
+    @media only screen and (min-width:768px) {
+        font-size: 26px;
+        margin-top: 148px;
+        margin-bottom: 10px;
+    }
 }
 
 .position {
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--text-color);
 
     border: 1px solid var(--border-color);
     border-radius: 6px;
-    width: 193px;
-    height: 38px;
+    padding: 8px 16px;
     background-color: var(--bgcolor);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 34px;
+    margin-bottom: 24px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 16px;
+        margin-bottom: 34px;
+    }
 }
 
 .networkList {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 10px;
 
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+
+    @media only screen and (min-width: 768px) {
+        gap: 16px;
+        margin-bottom: 40px;
+    }
 }
 
 .networkItem {
@@ -107,6 +130,13 @@ svg {
     border-bottom: none;
 }
 
+.networkLink {
+    font-size: 15px;
+    color: var(--text-color);
+    height: 20px;;
+}
+
+
 .contactsIcon {
     border-radius: 4px;
     width: 35px;
@@ -129,16 +159,21 @@ svg {
 .resumeLink {
     border: 2px solid var(--border-color);
     border-radius: 8px;
-    width: 200px;
-    height: 49px;
+    padding: 10px 30px;
+    /* width: 200px;
+    height: 49px; */
     background-color: var(--buttonbg);
 
     font-family: var(--third-family);
     font-weight: 700;
-    font-size: 21px;
+    font-size: 14px;
     color: var(--button-text-color);
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 21px;
+    }
 }
