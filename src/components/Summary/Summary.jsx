@@ -2,7 +2,7 @@ import s from './Summary.module.css'
 
 export const Summary = () => {
     return (
-        <div className="container">
+        <div>
             <h2>About</h2>
             <div className={s.sectionText}>
             <p>

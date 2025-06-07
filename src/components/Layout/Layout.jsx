@@ -2,30 +2,56 @@ import { Suspense } from 'react'
 import { Profile } from '../Profile/Profile'
 import s from './Layout.module.css'
 import { AppBar } from '../AppBar/AppBar'
-import { SwitchTheme } from '../../ui/SwitchTheme/SwitchTheme'
+import { useMediaPoints } from '../../hooks/useMediaPoints'
+import { Header } from '../Header/Header'
 
 export const Layout = ({ children }) => {
-    return (
-        <div>
-            <header className={s.header}>
-                <p className={s.logo}>PortFolio</p>
-                <SwitchTheme />
-            </header>
-            
-            <div className={s.layout}>
-                <aside>
-                    <Profile />
-                </aside>
+    const { isMobile, isTablet, isDesktop } = useMediaPoints();
 
-                <main>
-                    <Suspense fallback={null}>{children}</Suspense>
-                </main>
+    return (
+        <>
+            {isMobile && (
+                <>
+                    <Header />
+                    <main>
+                        <Suspense fallback={null}>{children}</Suspense>
+                    </main>
+                </>
+                )}
+            {isTablet && (
+                <div>
+                    <Header />
+                    <div className={s.layout}>
+                        <aside>
+                            <Profile />
+                        </aside>
+                        <main>
+                            <Suspense fallback={null}>{children}</Suspense>
+                        </main>
+                    </div>
+                    
+                </div>
+            )}
+            {isDesktop && (
+                <div>
+                <Header />
                 
-                <aside>
-                    <AppBar />
-                </aside>
+                <div className={s.layout}>
+                    <aside>
+                        <Profile />
+                    </aside>
+    
+                    <main>
+                        <Suspense fallback={null}>{children}</Suspense>
+                    </main>
+                    
+                    <aside>
+                        <AppBar />
+                    </aside>
+                </div>
             </div>
-            
-        </div>
+            )}
+        </>
+        
     )
 }

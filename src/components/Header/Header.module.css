@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--logo-color);
+
+    @media only screen and (min-width: 768px) {
+        font-size: 38px;
+    }
+}
+
+.header_wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}

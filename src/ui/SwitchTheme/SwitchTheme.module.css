@@ -1,8 +1,13 @@
 .themeBtn {
-    width: 60px;
-    height: 60px;
+    width: 36px;
+    height: 36px;
     border-radius: 100%;
     background-color: var(--nav-link-bg);
     border: none;
     color: var(--containerbg);
+
+    @media only screen and (min-width: 768px) {
+        width: 60px;
+        height: 60px;
+    }
 }

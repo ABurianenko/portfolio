@@ -1,0 +1,53 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+}
+
+.burgerBtn {
+    background: transparent;
+    border: none;
+    z-index: 1000;
+    font-size: 1.8rem;
+    cursor: pointer; 
+    color: var(--logo-color);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 4rem 2rem;
+    min-width: 250px;
+    border: 3px solid var(--border-color);
+    border-radius: 15px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2); 
+    height: 300px;
+    background: var(--containerbg);
+}
+
+.closeBtn {
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+}
+
+.menu_link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.menu_link:hover,
+.menu_link:active {
+    color: var(--nav-link-bg);   
+}

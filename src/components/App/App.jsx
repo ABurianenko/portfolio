@@ -5,13 +5,13 @@ import { Skills } from '../../pages/Skills/Skills'
 import { Experience } from '../../pages/Experience/Experience'
 import { Projects } from '../../pages/Projects/Projects'
 import { ProjectDetailsPage } from '../../pages/ProjectDetailsPage/ProjectDetailsPage'
+import { NotFound } from '../../pages/NotFound/NotFound'
 
 import { Route, Routes, Navigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { themeSelect } from '../../redux/theme/selectors'
 import { useEffect } from 'react'
 
-import './App.css'
 function App() {
   const theme = useSelector(themeSelect);
 
@@ -33,7 +33,7 @@ function App() {
           <Route path='/skills' element={<Skills />} />
           <Route path='/contact' element={<Contact />} />
 
-          {/* <Route path='*' element={<NotFound />} /> */}
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </Layout>
       

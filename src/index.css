@@ -12,10 +12,18 @@
 }
 
 body {
-  max-width: 1728px;
+  /* max-width: 1728px; */
   background-color: var(--bgcolor);
-  padding: 36px 108px;
-  justify-self: center;
+  padding: 36px 16px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 768px) {
+    padding: 36px 40px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    padding: 36px 108px;
+  }
 }
 
 main {
@@ -100,4 +108,6 @@ h2 {
   padding: 30px 44px;
 
   background-color: var(--containerbg);
+  width: 100%;
+  max-width: 913px;
 }
