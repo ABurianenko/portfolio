@@ -1,9 +1,12 @@
 import { useDispatch, useSelector } from "react-redux"
 import { ProjectsError, ProjectsIsLoading, SelectProjects } from "../../redux/projects/selectors";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { fetchProjects } from "../../redux/projects/operations";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 import { Pagination } from "../../components/Pagination/Pagination";
+
+import { GrPrevious } from "react-icons/gr";
+import { GrNext } from "react-icons/gr";
 
 import s from './Projects.module.css';
 
@@ -14,37 +17,55 @@ export const Projects = () => {
     const error = useSelector(ProjectsError);
     const isLoading = useSelector(ProjectsIsLoading);
 
-    const [currentPage, setCurrentPage] = useState(1);
-    const projectsPerPage = 4;
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const goToPrev = useCallback(() => {
+        setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
+    }, [projects.length]);
+
+    const goToNext = useCallback(() => {
+        setCurrentIndex((prev) => (prev + 1) % projects.length);
+    }, [projects.length]);
 
     useEffect(() => {
         dispatch(fetchProjects());
     }, [dispatch]);
 
-    const lastIndex = currentPage * projectsPerPage;
-    const firstIndex = lastIndex - projectsPerPage;
-    const currentProjects = projects.slice(firstIndex, lastIndex);
+    useEffect(() => {
+        const interval = setInterval(() => {
+        goToNext();
+    }, 5000);
+
+        return () => clearInterval(interval);
+    }, [goToNext]);
+    
+      
+
+    const getProjectPosition = (index) => {
+        if (index === currentIndex) return "active";
+        if (index === (currentIndex - 1 + projects.length) % projects.length) return "prev";
+        if (index === (currentIndex + 1) % projects.length) return "next";
+        return "hidden";
+    };
 
     return (
         <div className="container">
             <h2>Projects</h2>
-            {isLoading && <p>Loading...</p>}
-            {error && <p>Failed to load projects</p>}
-            {projects && (
-                <div className={s.projects}>
-                    <ul className={s.projects_list}>
-                        {currentProjects.map(project => (
-                            <ProjectCard key={project.id} project={project} />
-                        ))}
-                    </ul>
-                    <Pagination 
-                        total={projects.length}
-                        perPage={projectsPerPage}
-                        current={currentPage}
-                        setCurrent={setCurrentPage} 
-                    />
-                </div>
-            )}
+                {isLoading && <p>Loading...</p>}
+                {error && <p>Failed to load projects</p>}
+            <div className={s.slider}>
+                
+        
+                <button className={s.navBtn + " " + s.prev} onClick={goToPrev}><GrPrevious /></button>
+                {projects.map((project, index) => (
+                <ProjectCard
+                    key={project.id}
+                    project={project}
+                    position={getProjectPosition(index)}
+                />
+                ))}
+                <button className={s.navBtn + " " + s.next} onClick={goToNext}><GrNext /></button>
+            </div>
         </div>
-    )
+    );
 }

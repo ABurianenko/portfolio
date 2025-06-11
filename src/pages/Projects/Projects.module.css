@@ -1,15 +1,33 @@
-.projects {
-    margin-top: 28px;
-    gap: 24px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.slider {
+    position: relative;
+    height: 500px;
+    overflow: hidden; 
 }
 
-.projects_list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 24px;
+.navBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 4;
+    padding: 0.3em 0.6em;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* .navBtn:hover {
+    background: var(--accent-color);
+    color: #fff;
+} */
+
+.prev {
+    left: -20px;
+}
+
+.next {
+    right: -20px; 
 }
