@@ -1,6 +1,12 @@
 .layout {
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: 52px;
+    grid-template-columns: 0.5fr 1.5fr;
+    gap: 24px;
+
+    @media screen and (min-width: 1240px) {
+        grid-template-columns: auto 1fr auto;
+        gap: 26px;
+    }
+    
 }
 

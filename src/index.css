@@ -12,7 +12,6 @@
 }
 
 body {
-  /* max-width: 1728px; */
   background-color: var(--bgcolor);
   padding: 36px 24px;
   margin: 0 auto;
@@ -21,7 +20,7 @@ body {
     padding: 36px 40px;
   }
 
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1240px) {
     padding: 36px 108px;
   }
 }
@@ -113,7 +112,7 @@ h2 {
 
   background-color: var(--containerbg);
   width: 100%;
-  max-width: 913px;
+  /* max-width: 913px; */
 
   @media only screen and (min-width: 768px) {
     padding: 30px 44px;

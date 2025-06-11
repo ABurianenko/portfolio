@@ -1,12 +1,20 @@
-.info {
+.info {    
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: minmax(120px, 200px) 1fr;
     grid-template-areas: 
     'img header'
     'desc desc'
     'f f'
     'stack stack';
     gap: 12px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: minmax(200px, 240px) 1fr;
+    }
+
+    @media screen and (min-width:1240px) {
+        grid-template-columns: 240px 1fr;
+    }
 }
 
 .info_img {

@@ -6,7 +6,7 @@ import { useMediaPoints } from '../../hooks/useMediaPoints'
 import { Header } from '../Header/Header'
 
 export const Layout = ({ children }) => {
-    const { isMobile, isTablet, isDesktop } = useMediaPoints();
+    const { isMobile, isTablet, isDesktop } = useMediaPoints();    
 
     return (
         <>

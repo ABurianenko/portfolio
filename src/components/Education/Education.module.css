@@ -12,10 +12,8 @@
         grid-template-areas: 
         'course course'
         'master bachelor';
-        gap: 20px 38px;
+        gap: 20px 20px;
     }
-
-    
 }
 
 .education_item {
@@ -64,7 +62,7 @@
     font-size: 14px;
     color: var(--service-title-color);
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1240px) {
         font-size: 18px;
     }
 }
@@ -75,7 +73,7 @@
     font-size: 16px;
     color: var(--service-title-color);
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1240px) {
         font-size: 18px;
     }
 }

@@ -18,7 +18,7 @@
             'logo role'
             'logo duration'
             'desc desc';
-        gap: 20px;
+        gap: 12px;
     }
 }
 
@@ -46,7 +46,7 @@
     font-size: 18px;
     color: var(--service-title-color);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1240px) {
         font-size: 16px;
         font-weight: 400;
     }
@@ -60,7 +60,7 @@
     font-size: 16px;
     color: var(--service-title-color);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1240px) {
         font-size: 18px;
     }
 }
@@ -73,7 +73,7 @@
     font-size: 15px;
     color: var(--service-title-color);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1240px) {
         font-size: 18px;
     }
 }
@@ -94,7 +94,7 @@ span {
     flex-direction: column;
     gap: 8px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1240px) {
         font-size: 18px;
     }
 }

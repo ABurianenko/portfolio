@@ -62,7 +62,7 @@ export const TOOLS = [
 
 export const BREAKPOINTS = {
     mobile: '(max-width: 767px)',
-    tablet: '(min-width: 768px) and (max-width: 1439px)',
-    desktop: '(min-width: 1440px)',
+    tablet: '(min-width: 768px) and (max-width: 1239px)',
+    desktop: '(min-width: 1240px)',
 };
 
