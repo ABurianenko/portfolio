@@ -1,6 +1,6 @@
 export const TECH_SKILLS = [
     {
-        "name": "JavaScript",
+        "name": "Java Script",
         "logo": "/svg/symbol-defs.svg#icon-javascript-icon"
     },
     {
@@ -28,7 +28,7 @@ export const TECH_SKILLS = [
         "logo": "/svg/symbol-defs.svg#icon-js_redux-icon"
     },
     {
-        "name": "TypeScript",
+        "name": "Type Script",
         "logo": "/svg/symbol-defs.svg#icon-typescriptlang-icon"
     }
 ];

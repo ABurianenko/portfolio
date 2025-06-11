@@ -14,7 +14,7 @@
 body {
   /* max-width: 1728px; */
   background-color: var(--bgcolor);
-  padding: 36px 16px;
+  padding: 36px 24px;
   margin: 0 auto;
 
   @media only screen and (min-width: 768px) {
@@ -50,8 +50,12 @@ a {
 h2 {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
   color: var(--text-color);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 28px;
+  }
 }
 
 :root {
@@ -105,9 +109,13 @@ h2 {
   border: 3px solid var(--border-color);
   border-radius: 14px;
 
-  padding: 30px 44px;
+  padding: 30px 16px;
 
   background-color: var(--containerbg);
   width: 100%;
   max-width: 913px;
+
+  @media only screen and (min-width: 768px) {
+    padding: 30px 44px;
+  }
 }

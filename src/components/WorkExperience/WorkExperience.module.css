@@ -2,17 +2,24 @@
     border: 3px solid var(--submit-btn);
     border-radius: 9px;
     padding: 16px;
-
     margin-top: 20px;
 
-    display: grid;
-    grid-template-columns: 124px auto;
-    grid-template-areas: 
-    'logo company'
-    'logo role'
-    'logo duration'
-    'desc desc';
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    background-color: var(--containerbg);
+
+    @media only screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 124px auto;
+        grid-template-areas:
+            'logo company'
+            'logo role'
+            'logo duration'
+            'desc desc';
+        gap: 20px;
+    }
 }
 
 .work_logo {
@@ -23,6 +30,12 @@
     align-self: center;
 
     background-color: var(--contactsbg);
+
+    @media only screen and (max-width: 767px) {
+        width: 100px;
+        height: 100%;
+        margin-bottom: 16px;
+    }
 }
 
 .work_company {
@@ -32,6 +45,11 @@
     font-weight: 700;
     font-size: 18px;
     color: var(--service-title-color);
+
+    @media screen and (max-width: 767px) {
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 
 .work_role {
@@ -39,8 +57,12 @@
 
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--service-title-color);
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .work_duration {
@@ -48,8 +70,12 @@
 
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     color: var(--service-title-color);
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 span {
@@ -61,15 +87,23 @@ span {
 
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     color: var(--service-desc-color);
 
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .work_desc_list {
-    margin-left: 36px;
+    margin-left: 24px;
     list-style-type: disc;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 36px;
+    }
 }

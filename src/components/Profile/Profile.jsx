@@ -11,35 +11,37 @@ export const Profile = () => {
     return (
         <>
             {isMobile ? (
-                <div>
+                <div className={s.profile}>
                     <img className={s.avatar} src="/images/photo_2025-05-21_17-07-50.jpg" alt="avatar" />
                     <div className={s.wrapper}>
                         <h1 className={s.name}>Anastasiia Burianenko</h1>
                         <p className={s.position}>Front-End Developer</p>
                         <ul className={s.networkList}>
-                            <li className={s.contactsItem}>
+                            <li className={s.networkItem}>
                                 <a className={s.contacts} href="tel:+380636485625">
-                                    <CiMobile1 />
+                                    <CiMobile1 style={{ color: 'var(--service-desc-color)' }} />
                                 </a>
                             </li>
-                            <li className={s.contactsItem}>
+                            <li className={s.networkItem}>
                                 <a className={s.contacts} href="tel:+351914640057">
-                                    <CiMobile1 />
+                                    <CiMobile1 style={{ color: 'var(--service-desc-color)' }} />
                                 </a>
                             </li>
-                            <li className={s.contactsItem}>
+                            <li className={s.networkItem
+
+                            }>
                                 <a className={s.contacts} href="mailto:aburianenko@gmail.com">
-                                    <IoMailUnreadOutline />
+                                    <IoMailUnreadOutline style={{ color: 'var(--service-desc-color)' }} />
                                 </a>
                             </li>
                             <li className={s.networkItem}>
                                 <a href="https://www.linkedin.com/in/anastasiia-burianenko/">
-                                    <IoLogoLinkedin />
+                                    <IoLogoLinkedin style={{ color: 'var(--service-desc-color)' }} />
                                 </a>
                             </li>
                             <li className={s.networkItem}>
                                 <a href="https://github.com/ABurianenko">
-                                    <IoLogoGithub />
+                                    <IoLogoGithub style={{ color: 'var(--service-desc-color)' }}/>
                                 </a>
                             </li>
                         </ul>

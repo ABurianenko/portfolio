@@ -1,4 +1,4 @@
-import { Layout } from '../Layout/Layout'
+import { Layout } from '../Layout/MyLayout'
 import { About } from '../../pages/About/About'
 import { Contact } from '../../pages/Contact/Contact'
 import { Skills } from '../../pages/Skills/Skills'
@@ -12,6 +12,8 @@ import { useSelector } from 'react-redux'
 import { themeSelect } from '../../redux/theme/selectors'
 import { useEffect } from 'react'
 
+
+
 function App() {
   const theme = useSelector(themeSelect);
 
@@ -23,6 +25,7 @@ function App() {
   return (
     <div>
       <Layout>
+      
         <Routes>
 
           <Route path="/" element={<Navigate to="/about" />} />

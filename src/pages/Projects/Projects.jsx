@@ -5,7 +5,7 @@ import { fetchProjects } from "../../redux/projects/operations";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 import { Pagination } from "../../components/Pagination/Pagination";
 
-import s from './Projects..module.css';
+import s from './Projects.module.css';
 
 export const Projects = () => {
     const dispatch = useDispatch();
@@ -24,8 +24,6 @@ export const Projects = () => {
     const lastIndex = currentPage * projectsPerPage;
     const firstIndex = lastIndex - projectsPerPage;
     const currentProjects = projects.slice(firstIndex, lastIndex);
-
-    
 
     return (
         <div className="container">

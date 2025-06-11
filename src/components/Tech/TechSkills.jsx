@@ -8,7 +8,7 @@ export const TechSkills = () => {
             <h2>Skills</h2>
             <ul className={s.skills_list}>
                 {TECH_SKILLS.map((i) => (
-                    <li key={i}>
+                    <li key={i.name}>
                         <div className={s.skills_wrapper}>
                             <svg className={s.skills_svg}>
                                 <use href={i.logo} />

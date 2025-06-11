@@ -1,4 +1,5 @@
-import { ErrorMessage, Field, Form, Formik } from "formik"
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import { useRef } from 'react';
 import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
 import toast from "react-hot-toast";
@@ -6,6 +7,8 @@ import toast from "react-hot-toast";
 import s from './ContactForm.module.css';
 
 export const ContactForm = () => {
+    const formRef = useRef();
+
     const initialValues = {
         name: '',
         email: '',
@@ -13,17 +16,18 @@ export const ContactForm = () => {
         message: ''
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (_, { resetForm }) => {
         emailjs.sendForm(
             'service_7uqmovt',
             'template_mpzwbma',
-            e.target,
+            formRef.current,
             'k_O8o2CcJBe9XNDa-'
           ).then(
             () => {
                   toast('Thank you for mail! I will answer ASAP', {
                   icon: '🤝',
-              });
+                  });
+                  resetForm();
             },
               (error) => {
                 console.log(error);
@@ -31,7 +35,7 @@ export const ContactForm = () => {
             }
           );
         
-        e.target.reset();
+          
     };
 
     const validationSchema = Yup.object().shape({
@@ -54,7 +58,7 @@ export const ContactForm = () => {
                 onSubmit={handleSubmit}
                 validationSchema={validationSchema}
             >
-                <Form className={s.form}>
+                <Form ref={formRef} className={s.form}>
                     <label className={s.form_label}>
                         Name
                         <Field className={s.form_field} type="text" name="name" />

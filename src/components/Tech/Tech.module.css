@@ -1,43 +1,68 @@
 .skills_list {
     display: flex;
     flex-wrap: wrap;
-    gap: 22px;
+    gap: 16px;
 
-    margin-top: 32px;
-    margin-bottom: 80px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+        gap: 22px;
+        
+        margin-top: 32px;
+        margin-bottom: 80px;
+    }
 }
 
 .skills_list>li {
-    width: 86px;
+    width: 46px;
     
     flex-shrink: 0;
+
+    @media screen and (min-width:768px) {
+        width: 86px;
+    }
 }
 
 .skills_wrapper {
     border: 1px solid var(--submit-btn);
     border-radius: 8px;
-    width: 86px;
-    height: 80px;
+    width: 46px;
+    height: 46px;
     box-shadow: 0 0 8px 2px var(--skills-shadow);
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width:768px) {
+        width: 86px;
+        height: 80px;
+    }
 }
 
 .skills_svg {
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: 768px) {
+        width: 48px;
+        height: 48px;
+    }
 }
 
 .skills_name {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 19px;
+    font-size: 14px;
     color: var(--service-title-color);
 
     margin-top: 8px;
 
     text-align: center;
     text-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+        font-size: 19px;
+    }
 }

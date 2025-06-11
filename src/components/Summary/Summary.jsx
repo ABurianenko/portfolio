@@ -24,27 +24,36 @@ export const Summary = () => {
             <ul className={s.servicesList}>
                 <li className={s.servicesList_item}>
                     <img className={s.servicesList_img} src="/images/service1-min.jpg" alt="front-end" />
-                    <h4 className={s.servicesList_title}>Web Front-End Development</h4>
-                    <p className={s.servicesList_description}>
-                        I build responsive and accessible user interfaces using React.js and modern web technologies. 
-                        I focus on clean code, performance, and usability.
-                    </p>
+                    <div className={s.servicesList_wrap}>
+                        <h4 className={s.servicesList_title}>Web Front-End Development</h4>
+                        <p className={s.servicesList_description}>
+                            I build responsive and accessible user interfaces using React.js and modern web technologies. 
+                            I focus on clean code, performance, and usability.
+                        </p>
+                    </div>
+                    
                 </li>
                 <li className={s.servicesList_item}>
                     <img className={s.servicesList_img} src="/images/service2-min.jpg" alt="UI/UX" />
-                    <h4 className={s.servicesList_title}>Back-End Development</h4>
-                    <p className={s.servicesList_description}>
+                    <div className={s.servicesList_wrap}>
+                        <h4 className={s.servicesList_title}>Back-End Development</h4>
+                        <p className={s.servicesList_description}>
                         During my fullstack course, I developed several backend projects using Node.js, Express, and MongoDB.
                         While my main focus is frontend, I am comfortable working with server-side logic when needed.
-                    </p>
+                        </p>
+                    </div>
+                    
                 </li>
                 <li className={s.servicesList_item}>
                     <img className={s.servicesList_img} src="/images/service3-min.jpg" alt="back-end" />
-                    <h4 className={s.servicesList_title}>UI/UX Designing</h4>
-                    <p className={s.servicesList_description}>
+                    <div className={s.servicesList_wrap}>
+                        <h4 className={s.servicesList_title}>UI/UX Designing</h4>
+                        <p className={s.servicesList_description}>
                         I can suggest and implement small design improvements to make interfaces more user-friendly,
                         ensuring a smooth and intuitive user experience.
-                    </p>
+                        </p>  
+                    </div>
+                    
                 </li>
             </ul>
         </div>
