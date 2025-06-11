@@ -1,10 +1,3 @@
-@font-face {
-  font-family: "Sigmar One";
-  src: url("/src/assets/fonts/SigmarOne-Regular.ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +5,7 @@
 }
 
 body {
-  height: 1vh;
+  min-height: 100vh;
   background-color: var(--bgcolor);
   padding: 36px 24px;
   margin: 0 auto;
@@ -113,7 +106,7 @@ h2 {
 
   background-color: var(--containerbg);
   width: 100%;
-  min-height: 100vh;
+  
   /* max-width: 913px; */
 
   @media only screen and (min-width: 768px) {

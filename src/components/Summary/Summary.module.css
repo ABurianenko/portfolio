@@ -36,10 +36,11 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
 
-    @media only screen and (min-width:1240px) {
+    /* @media only screen and (min-width:1240px) {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 28px 34px;
-    }
+    } */
     
 }
 
@@ -53,17 +54,17 @@
     background-color: var(--service-item-bg);
 }
 
-@media only screen and (max-width:1239px) {
-    .servicesList_item:nth-child(2n) {
-        flex-direction: row-reverse;
-        padding-left: 8px;
-        padding-right: 0;
 
-        >.servicesList_img {
-            border-radius: 0 8px 8px 0;
-        }
+.servicesList_item:nth-child(2n) {
+    flex-direction: row-reverse;
+    padding-left: 8px;
+    padding-right: 0;
+
+    >.servicesList_img {
+        border-radius: 0 8px 8px 0;
     }
 }
+
 
 .servicesList_wrap {
     display: flex;

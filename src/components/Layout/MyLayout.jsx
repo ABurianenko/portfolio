@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import { Profile } from '../Profile/Profile'
 import s from './Layout.module.css'
-import { AppBar } from '../AppBar/AppBar'
+import { Navigation } from '../Navigation/Navigation'
 import { useMediaPoints } from '../../hooks/useMediaPoints'
 import { Header } from '../Header/Header'
 
@@ -46,7 +46,7 @@ export const Layout = ({ children }) => {
                     </main>
                     
                     <aside>
-                        <AppBar />
+                        <Navigation />
                     </aside>
                 </div>
             </div>

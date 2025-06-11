@@ -9,6 +9,8 @@
     background-color: var(--project-card-bg);
 
     padding: 22px;
+    height: 400px;
+    
 
     position: absolute;
     top: 50%;
@@ -81,7 +83,6 @@
 
     border: 2px solid var(--submit-btn);
     border-radius: 4px;
-    width: 96px;
 
     background-color: var(--submit-btn);
 

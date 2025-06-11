@@ -1,11 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import { FaUserLarge, FaLaptopCode } from "react-icons/fa6";
-import { BsViewList } from "react-icons/bs";
-import { AiTwotoneSecurityScan } from "react-icons/ai";
-import { RiContactsBook3Line } from "react-icons/ri";
-import { NavLink } from "react-router-dom";
+import { Navigation } from '../Navigation/Navigation'
 
 import s from './BurgerMenu.module.css'
 
@@ -46,38 +42,30 @@ export const BurgerMenu = () => {
         return () => {
           document.removeEventListener('mousedown', handleClickOutside);
         };
-      }, [isOpen]);
+    }, [isOpen]);
+    
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden'; // 🔒 забороняє скрол
+        } else {
+            document.body.style.overflow = '';
+        }
+      
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isOpen]);
+      
 
     return (
         <div>
             <button onClick={toggleMenu} className={s.burgerBtn}>
-                {isOpen ? <IoMdClose className={`${s.burgerBtn} ${s.closeBtn}`} /> : <FaBars  />}
+                {isOpen ? <IoMdClose /> : <FaBars  />}
             </button>
 
             {isOpen && (
                 <div className={s.overlay}>
-                    <nav className={s.menu}>
-                        <NavLink className={s.menu_link} onClick={closeMenu} to="/about">
-                            <FaUserLarge />
-                            About
-                        </NavLink>
-                        <NavLink className={s.menu_link} onClick={closeMenu} to="/experience">
-                            <BsViewList />
-                            Experience
-                        </NavLink>
-                        <NavLink className={s.menu_link} onClick={closeMenu} to="/projects">
-                            <FaLaptopCode />
-                            Projects
-                        </NavLink>
-                        <NavLink className={s.menu_link} onClick={closeMenu} to="/skills">
-                            <AiTwotoneSecurityScan />
-                            Skills
-                        </NavLink>
-                        <NavLink className={s.menu_link} onClick={closeMenu} to="/contact">
-                            <RiContactsBook3Line />
-                            Contact
-                        </NavLink>
-                    </nav>
+                    <Navigation closeMenu={closeMenu} />
                 </div>
                 
             )}
