@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "RentalCar",
-        "shortDescription": "RentalCar is a web application for viewing and booking cars.",
+        "shortDescription": "RentalCar is a web application for viewing and booking cars",
         "fullDescription": "RentalCar is a web application for viewing and booking cars. Users can filter cars by brand, price and mileage, view detailed information about each car and make a reservation through a convenient form.",
         "features": [
             "📋 Car catalog with the ability to filter by brand, price and mileage",
@@ -78,7 +78,7 @@
     {
         "id": 3,
         "name": "ContactBook App",
-        "shortDescription": "RESTful Node.js API with MongoDB backend and Swagger API docs, deployed on Render.",
+        "shortDescription": "RESTful Node.js API with MongoDB backend and Swagger API docs, deployed on Render",
         "fullDescription": "This project is a RESTful API built using Node.js and Express, with MongoDB as the database layer managed through Mongoose. It supports full CRUD operations and includes detailed API documentation via Swagger UI. The project is deployed on Render for easy accessibility. Ideal for backend API development and MongoDB integration practice.",
         "features": [
             "🔄 CRUD operations for managing contacts",
@@ -121,20 +121,21 @@
                 "usage": "Cloud hosting and deployment"
               }
         ],
-        "image": "/images/projects/Cathouse.png",
+        "image": "/images/projects/Swagger.png",
         "link": "https://nodejs-hw-mongodb-3nyw.onrender.com/api-docs",
         "gitHub": "https://github.com/ABurianenko/nodejs-hw-mongodb/tree/hw7-swagger",
         "role": "Individual project"
     },
     {
         "id": 4,
-        "name": "Image Search App",
-        "shortDescription": "A minimalist landing page about cats",
-        "fullDescription": "A minimalist landing page crafted with HTML and CSS, developed to practice responsive layout design using CSS Grid. The project demonstrates how to structure and align content effectively across screen sizes, without relying on JavaScript or interactive UI features.",
+        "name": "Lloyd Jefferson Web",
+        "shortDescription": "A clean, one-page personal portfolio website showcasing the developer's skills and contact information",
+        "fullDescription": "This is a modern, responsive personal portfolio designed to highlight the work experience, technical skills, and professional profile. The site begins with a striking hero banner featuring the developer's name and a brief introduction. As you scroll, the site features a Skills section shown as a continuously scrolling horizontal text line, a Portfolio section showcasing projects through thumbnails or cards, and a Contact section complete with a functional form. Subtle scroll-triggered animations and a mobile-friendly navigation enhance user experience. Overall, the design is minimalistic, with clear typography, intuitive layout, and a smooth, engaging flow.",
         "features": [
-            "🎨 Stylish and modern landing page layout",
-            "📱 Fully responsive design for mobile, tablet, and desktop",
-            "🚀 Smooth scrolling and simple animations"
+            "📱 Responsive layout across devices",
+            "✉️ Contact form for inquiries",
+            "🎯 Smooth scroll animations and active nav highlights",
+            "🗂️ Portfolio gallery with initially hidden projects that can be revealed by tapping the Load More button"
         ],
         "stack": [
             {
@@ -143,23 +144,31 @@
             },
             {
                 "tech": "CSS3",
-                "usage": "Styling and layout (CSS Grid)"
+                "usage": "Flexbox layout, responsive design"
+            },
+            {
+                "tech": "JavaScript",
+                "usage": "Form validation, scroll effects, nav toggles"
             }
         ],
-        "image": "/images/projects/Cathouse.png",
-        "link": "https://aburianenko.github.io/Cathouse/",
-        "gitHub": "https://github.com/ABurianenko/Cathouse",
-        "role": "Individual project"
+        "image": "/images/projects/Lloyd.png",
+        "link": "https://1ster14ka.github.io/js-avengers/",
+        "gitHub": "https://github.com/1ster14ka/js-avengers",
+        "role": "Team project - Gallery section, theme switcher"
     },
     {
         "id": 5,
-        "name": "Image Search App",
-        "shortDescription": "A minimalist landing page about cats",
-        "fullDescription": "A minimalist landing page crafted with HTML and CSS, developed to practice responsive layout design using CSS Grid. The project demonstrates how to structure and align content effectively across screen sizes, without relying on JavaScript or interactive UI features.",
+        "name": "Watchcharm",
+        "shortDescription": "A stylish landing page for a luxury watch marketplace, featuring product highlights, brand story, promotional content, and a contact form — all wrapped in a clean, elegant design",
+        "fullDescription": "Watchcharm is a responsive, modern landing page designed to promote a luxury watch marketplace. The layout includes a navigation header with section links and social media, a striking hero banner, and an About Us section that introduces the brand. Visitors can browse featured products in a catalog-style layout, view promotional offers in a sale banner, and read customer reviews. The page concludes with a functional contact form, making it easy for potential buyers to get in touch. It emphasizes premium aesthetics and user-friendly structure",
         "features": [
-            "🎨 Stylish and modern landing page layout",
-            "📱 Fully responsive design for mobile, tablet, and desktop",
-            "🚀 Smooth scrolling and simple animations"
+            "🧭 Sticky header with navigation and social media links",
+            "🕰️ Hero section with visual branding",
+            "📖 About Us section with brand mission",
+            "🛍️ Catalog display showcasing watches or collections",
+            "🌟 Customer reviews/testimonials section",
+            "📬 Contact form for inquiries or orders",
+            "📱 Fully responsive layout for all devices"
         ],
         "stack": [
             {
@@ -168,12 +177,79 @@
             },
             {
                 "tech": "CSS3",
-                "usage": "Styling and layout (CSS Grid)"
+                "usage": "Styling and layout"
             }
         ],
-        "image": "/images/projects/Cathouse.png",
-        "link": "https://aburianenko.github.io/Cathouse/",
-        "gitHub": "https://github.com/ABurianenko/Cathouse",
-        "role":"Individual project"
+        "image": "/images/projects/Watchcharm.png",
+        "link": "https://tor10s.github.io/tors-hammer/",
+        "gitHub": "https://github.com/TOR10S/tors-hammer",
+        "role":"Team project - Reviews section"
+    },
+    {
+        "id": 6,
+        "name": "Money Guard",
+        "shortDescription": "A full-featured personal finance tracker web app with user authentication, transaction management, real-time currency data, and data visualization",
+        "fullDescription": "This is a responsive financial tracking web application that allows users to register, log in, track income and expenses, view analytics, and manage transactions. The frontend includes fully validated forms, modals, and responsive layout logic using React, Redux Toolkit, react-hook-form, Yup, and third-party libraries such as react-chartjs-2 and react-datepicker. It supports conditional rendering for desktop, tablet, and mobile views. The backend is built around a set of secure, RESTful endpoints handling user authentication, session management, transactions, and category-based reports. It includes logic to handle currency exchange data caching and input validation",
+        "features": [
+            "🔐 Registration and login forms with validation",
+            "📈 Dashboard with conditional rendering",
+            "💱 Currency exchange tab (with Monobank API & localStorage caching)",
+            "📊 Statistics tab with chart and category summaries",
+            "💼 Transactions CRUD with modals",
+            "📱 Responsive UI for mobile, tablet, and desktop",
+            "🛠️ RESTful endpoints",
+            "⚙️ JWT-based authentication layer",
+            "🧠 Server-side validation and error responses"
+        ],
+        "stack": [
+            { 
+                "tech": "React", 
+                "usage": "Frontend framework for building UI" 
+            },
+            { 
+                "tech": "React Router DOM", 
+                "usage": "Client-side routing" 
+            },
+            { 
+                "tech": "Redux Toolkit", 
+                "usage": "State management" 
+            },
+            { 
+                "tech": "React Redux", 
+                "usage": "Redux bindings for React" 
+            },
+            { 
+                "tech": "Redux Persist", 
+                "usage": "Persist Redux store in localStorage" 
+            },
+            { 
+                "tech": "Yup", 
+                "usage": "Schema-based form validation" 
+            },
+            { 
+                "tech": "Axios", 
+                "usage": "HTTP requests" 
+            },
+            { 
+                "tech": "React Icons", 
+                "usage": "Scalable vector icons" 
+            },
+            { 
+                "tech": "React Datepicker", 
+                "usage": "Date input field for forms" 
+            },
+            { 
+                "tech": "React Hot Toast", 
+                "usage": "User notifications" 
+            },
+            { 
+                "tech": "React Select", 
+                "usage": "Custom select inputs" 
+            }
+        ],
+        "image": "/images/projects/MoneyGuard.png",
+        "link": "https://team-money-guard.vercel.app/",
+        "gitHub": "https://github.com/oykss/team-money-guard",
+        "role":"Team project - Statistics Page"
     }
 ]
