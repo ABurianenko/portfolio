@@ -9,15 +9,27 @@ import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 
 import s from './Projects.module.css';
+import { useLocation } from "react-router-dom";
 
 export const Projects = () => {
     const dispatch = useDispatch();
+    const location = useLocation();
 
     const projects = useSelector(SelectProjects);
     const error = useSelector(ProjectsError);
     const isLoading = useSelector(ProjectsIsLoading);
 
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        if (location.state?.fromIndex !== undefined) {
+          setCurrentIndex(location.state.fromIndex);
+        }
+      }, [location.state]);
+
+    useEffect(() => {
+        dispatch(fetchProjects());
+    }, [dispatch]);
 
     const goToPrev = useCallback(() => {
         setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
@@ -26,10 +38,6 @@ export const Projects = () => {
     const goToNext = useCallback(() => {
         setCurrentIndex((prev) => (prev + 1) % projects.length);
     }, [projects.length]);
-
-    useEffect(() => {
-        dispatch(fetchProjects());
-    }, [dispatch]);
 
     // useEffect(() => {
     //     const interval = setInterval(() => {
@@ -54,17 +62,16 @@ export const Projects = () => {
                 {isLoading && <p>Loading...</p>}
                 {error && <p>Failed to load projects</p>}
             <div className={s.slider}>
-                
-        
                 <button className={s.navBtn + " " + s.prev} onClick={goToPrev}><GrPrevious /></button>
                 {projects.map((project, index) => (
                 <ProjectCard
                     key={project.id}
                     project={project}
                     position={getProjectPosition(index)}
+                    index={index}
                 />
                 ))}
-                <button className={s.navBtn + " " + s.next} onClick={goToNext}><GrNext /></button>
+                <button className={`${s.navBtn} ${s.next}`} onClick={goToNext}><GrNext /></button>
             </div>
         </div>
     );

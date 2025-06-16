@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 import s from './ProjectCard.module.css'
 
-export const ProjectCard = ({ project, position }) => {
+export const ProjectCard = ({ project, position, index }) => {
     return (
         <div className={`${s.card} ${s[position]}`}>
             <div>
@@ -10,7 +10,13 @@ export const ProjectCard = ({ project, position }) => {
                 <h3 className={s.card_name}>{project.name}</h3>
                 <p className={s.card_desc}>{project.shortDescription}</p>
             </div>
-            <Link className={s.card_link} to={`/projects/${project.id}`}>Learn more</Link>
+            <Link
+                className={s.card_link}
+                to={`/projects/${project.id}`}
+                state={{fromIndex: index}}
+            >
+                Learn more
+            </Link>
         </div>
     );
 };

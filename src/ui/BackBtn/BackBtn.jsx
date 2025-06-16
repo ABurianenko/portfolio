@@ -6,11 +6,19 @@ import s from './BackBtn.module.css';
 
 export const BackBtn = () => {
     const location = useLocation();
-    const goBackRef = useRef(location.state ?? "/projects");
+    const goBackRef = useRef(location.state?.from || "/projects");
+    const fromIndex = location.state?.fromIndex;
 
     return (
         <div>
-            <Link className={s.backBtn} to={goBackRef.current}><IoIosArrowBack />Back</Link>
+            <Link
+                className={s.backBtn}
+                to={{ pathname: goBackRef.current }}
+                state={{ fromIndex }}
+            >
+                <IoIosArrowBack />
+                Back
+            </Link>
         </div>
     )
 }
