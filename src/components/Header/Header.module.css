@@ -19,6 +19,6 @@
 
 .header_wrapper {
     display: flex;
-    gap: 16px;
+    gap: 10px;
     align-items: center;
 }

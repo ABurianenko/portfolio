@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Navigation } from '../Navigation/Navigation'
 
 import s from './BurgerMenu.module.css'
@@ -60,7 +59,7 @@ export const BurgerMenu = () => {
     return (
         <div>
             <button onClick={toggleMenu} className={s.burgerBtn}>
-                {isOpen ? <AiOutlineClose /> : <FaBars  />}
+                {isOpen ? <FaTimes size={40} /> : <FaBars  />}
             </button>
 
             {isOpen && (
