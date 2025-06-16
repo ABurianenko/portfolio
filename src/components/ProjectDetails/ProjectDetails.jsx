@@ -14,13 +14,19 @@ export const ProjectDetails = () => {
 
     return (
         <div className={s.info}>
+            <h3 className={s.info_name}>{project.name}</h3>
             <img className={s.info_img} src={project.image} alt={project.name} />
-            <div className={s.info_header}>
-                <h3 className={s.info_name}>{project.name}</h3>
-                <p className={s.info_role}>{project.role}</p>
-                <a className={s.info_link} href={project.link} target="blank">Live Demo</a>
+        
+            <p className={s.info_role}>{project.role}</p>
+
+            <ul className={s.links}>
+                <li>
+                    <a className={s.info_link} href={project.link} target="blank">Live Demo</a>
+                </li>
+                <li>
                 <a className={s.info_link} href={project.gitHub} target="blank">GitHub</a>  
-            </div>
+                </li>
+            </ul>
             
             <p className={s.info_desc}>{project.fullDescription}</p>
 

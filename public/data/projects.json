@@ -52,141 +52,6 @@
     },
     {
         "id": 2,
-        "name": "Cathouse",
-        "shortDescription": "A minimalist landing page about cats",
-        "fullDescription": "A minimalist landing page crafted with HTML and CSS, developed to practice responsive layout design using CSS Grid. The project demonstrates how to structure and align content effectively across screen sizes, without relying on JavaScript or interactive UI features.",
-        "features": [
-            "🎨 Stylish and modern landing page layout",
-            "📱 Fully responsive design for mobile, tablet, and desktop",
-            "🚀 Smooth scrolling and simple animations"
-        ],
-        "stack": [
-            {
-                "tech": "HTML5",
-                "usage": "Markup structure"
-            },
-            {
-                "tech": "CSS3",
-                "usage": "Styling and layout (CSS Grid)"
-            }
-        ],
-        "image": "/images/projects/Cathouse.png",
-        "link": "https://aburianenko.github.io/Cathouse/",
-        "gitHub": "https://github.com/ABurianenko/Cathouse",
-        "role": "Individual project"
-    },
-    {
-        "id": 3,
-        "name": "ContactBook App",
-        "shortDescription": "RESTful Node.js API with MongoDB backend and Swagger API docs, deployed on Render",
-        "fullDescription": "This project is a RESTful API built using Node.js and Express, with MongoDB as the database layer managed through Mongoose. It supports full CRUD operations and includes detailed API documentation via Swagger UI. The project is deployed on Render for easy accessibility. Ideal for backend API development and MongoDB integration practice.",
-        "features": [
-            "🔄 CRUD operations for managing contacts",
-            "🔐 User authentication and authorization",
-            "🌐 OAuth support for authentication",
-            "📄 Swagger documentation for API endpoints",
-            "🚨 Error handling and validation"
-        ],
-        "stack": [
-            {
-                "tech": "Node.js",
-                "usage": "Backend runtime environment"
-              },
-              {
-                "tech": "Express.js",
-                "usage": "Web framework for building APIs"
-              },
-              {
-                "tech": "MongoDB",
-                "usage": "NoSQL database for data storage"
-              },
-              {
-                "tech": "Mongoose",
-                "usage": "MongoDB object modeling for Node.js"
-              },
-              {
-                "tech": "Swagger UI",
-                "usage": "API documentation and testing"
-              },
-              {
-                "tech": "OAuth",
-                "usage": "Authentication and authorization protocol"
-              },
-              {
-                "tech": "JWT",
-                "usage": "Token-based user authentication"
-              },
-              {
-                "tech": "Render",
-                "usage": "Cloud hosting and deployment"
-              }
-        ],
-        "image": "/images/projects/Swagger.png",
-        "link": "https://nodejs-hw-mongodb-3nyw.onrender.com/api-docs",
-        "gitHub": "https://github.com/ABurianenko/nodejs-hw-mongodb/tree/hw7-swagger",
-        "role": "Individual project"
-    },
-    {
-        "id": 4,
-        "name": "Lloyd Jefferson Web",
-        "shortDescription": "A clean, one-page personal portfolio website showcasing the developer's skills and contact information",
-        "fullDescription": "This is a modern, responsive personal portfolio designed to highlight the work experience, technical skills, and professional profile. The site begins with a striking hero banner featuring the developer's name and a brief introduction. As you scroll, the site features a Skills section shown as a continuously scrolling horizontal text line, a Portfolio section showcasing projects through thumbnails or cards, and a Contact section complete with a functional form. Subtle scroll-triggered animations and a mobile-friendly navigation enhance user experience. Overall, the design is minimalistic, with clear typography, intuitive layout, and a smooth, engaging flow.",
-        "features": [
-            "📱 Responsive layout across devices",
-            "✉️ Contact form for inquiries",
-            "🎯 Smooth scroll animations and active nav highlights",
-            "🗂️ Portfolio gallery with initially hidden projects that can be revealed by tapping the Load More button"
-        ],
-        "stack": [
-            {
-                "tech": "HTML5",
-                "usage": "Markup structure"
-            },
-            {
-                "tech": "CSS3",
-                "usage": "Flexbox layout, responsive design"
-            },
-            {
-                "tech": "JavaScript",
-                "usage": "Form validation, scroll effects, nav toggles"
-            }
-        ],
-        "image": "/images/projects/Lloyd.png",
-        "link": "https://1ster14ka.github.io/js-avengers/",
-        "gitHub": "https://github.com/1ster14ka/js-avengers",
-        "role": "Team project - Gallery section, theme switcher"
-    },
-    {
-        "id": 5,
-        "name": "Watchcharm",
-        "shortDescription": "A stylish landing page for a luxury watch marketplace, featuring product highlights, brand story, promotional content, and a contact form — all wrapped in a clean, elegant design",
-        "fullDescription": "Watchcharm is a responsive, modern landing page designed to promote a luxury watch marketplace. The layout includes a navigation header with section links and social media, a striking hero banner, and an About Us section that introduces the brand. Visitors can browse featured products in a catalog-style layout, view promotional offers in a sale banner, and read customer reviews. The page concludes with a functional contact form, making it easy for potential buyers to get in touch. It emphasizes premium aesthetics and user-friendly structure",
-        "features": [
-            "🧭 Sticky header with navigation and social media links",
-            "🕰️ Hero section with visual branding",
-            "📖 About Us section with brand mission",
-            "🛍️ Catalog display showcasing watches or collections",
-            "🌟 Customer reviews/testimonials section",
-            "📬 Contact form for inquiries or orders",
-            "📱 Fully responsive layout for all devices"
-        ],
-        "stack": [
-            {
-                "tech": "HTML5",
-                "usage": "Markup structure"
-            },
-            {
-                "tech": "CSS3",
-                "usage": "Styling and layout"
-            }
-        ],
-        "image": "/images/projects/Watchcharm.png",
-        "link": "https://tor10s.github.io/tors-hammer/",
-        "gitHub": "https://github.com/TOR10S/tors-hammer",
-        "role":"Team project - Reviews section"
-    },
-    {
-        "id": 6,
         "name": "Money Guard",
         "shortDescription": "A full-featured personal finance tracker web app with user authentication, transaction management, real-time currency data, and data visualization",
         "fullDescription": "This is a responsive financial tracking web application that allows users to register, log in, track income and expenses, view analytics, and manage transactions. The frontend includes fully validated forms, modals, and responsive layout logic using React, Redux Toolkit, react-hook-form, Yup, and third-party libraries such as react-chartjs-2 and react-datepicker. It supports conditional rendering for desktop, tablet, and mobile views. The backend is built around a set of secure, RESTful endpoints handling user authentication, session management, transactions, and category-based reports. It includes logic to handle currency exchange data caching and input validation",
@@ -251,5 +116,290 @@
         "link": "https://team-money-guard.vercel.app/",
         "gitHub": "https://github.com/oykss/team-money-guard",
         "role":"Team project - Statistics Page"
+    },
+    {
+        "id": 3,
+        "name": "Photo Gallery",
+        "shortDescription": "A responsive web app that displays a photo gallery in a grid layout, allowing users to browse images and view larger previews in a modal window",
+        "fullDescription": "Photo Gallery is a modern React + TypeScript application designed to display a collection of photos in a clean and responsive grid. The app fetches image data and presents it in a structured gallery layout, allowing users to click on any image to view it in full-size using a modal overlay. This project demonstrates effective use of TypeScript for type safety, functional components, and reusable UI elements. The layout adapts to different screen sizes, ensuring usability across devices",
+        "features": [
+            "🔍 Clickable images open in a modal preview",
+            "⚙️ TypeScript for typed React components",
+            "🎨 Clean and minimalist UI",
+            "⚡ Fast loading with optimized structure"
+        ],
+        "stack": [
+            {
+                "tech": "TypeScript + React",
+                "usage": "Strongly typed frontend framework for building interactive UIs"
+            },
+            {
+                "tech": "Axios",
+                "usage": "Fetching photo data from external sources"
+            },
+            {
+                "tech": "React Modal + React Loader Spinner + React Hot Toast",
+                "usage": "UI enhancements for modals, loading states, and notifications"
+            },
+            {
+                "tech": "Flat Color Icons",
+                "usage": "Flat-style icon set used in UI elements"
+            }
+        ],
+        "image": "/images/projects/Gallery.png",
+        "link": "https://goit-typescript-hw-02-seven-eta.vercel.app/",
+        "gitHub": "https://github.com/ABurianenko/Photo-gallery",
+        "role":"Individual project"
+    },
+    {
+        "id": 4,
+        "name": "Lloyd Jefferson Web",
+        "shortDescription": "A clean, one-page personal portfolio website showcasing the developer's skills and contact information",
+        "fullDescription": "This is a modern, responsive personal portfolio designed to highlight the work experience, technical skills, and professional profile. The site begins with a striking hero banner featuring the developer's name and a brief introduction. As you scroll, the site features a Skills section shown as a continuously scrolling horizontal text line, a Portfolio section showcasing projects through thumbnails or cards, and a Contact section complete with a functional form. Subtle scroll-triggered animations and a mobile-friendly navigation enhance user experience. Overall, the design is minimalistic, with clear typography, intuitive layout, and a smooth, engaging flow.",
+        "features": [
+            "📱 Responsive layout across devices",
+            "✉️ Contact form for inquiries",
+            "🎯 Smooth scroll animations and active nav highlights",
+            "🗂️ Portfolio gallery with initially hidden projects that can be revealed by tapping the Load More button"
+        ],
+        "stack": [
+            {
+                "tech": "HTML5",
+                "usage": "Markup structure"
+            },
+            {
+                "tech": "CSS3",
+                "usage": "Flexbox layout, responsive design"
+            },
+            {
+                "tech": "JavaScript",
+                "usage": "Form validation, scroll effects, nav toggles"
+            }
+        ],
+        "image": "/images/projects/Lloyd.png",
+        "link": "https://1ster14ka.github.io/js-avengers/",
+        "gitHub": "https://github.com/1ster14ka/js-avengers",
+        "role": "Team project - Gallery section, theme switcher"
+    },
+    {
+        "id": 5,
+        "name": "Contact Manager",
+        "shortDescription": "A contact management web application that allows users to register, log in, and manage personal contacts",
+        "fullDescription": "Contact Manager is a full-featured web application for managing personal contacts. Users can register, log in, and securely manage their contact list with options to add, edit, delete, or search contacts by name. The app features a clean and responsive interface using Tailwind CSS and Material UI, state handling with Redux Toolkit, and form validation powered by Formik and Yup. All user data is persisted across sessions using redux-persist, and the app provides real-time notifications via react-hot-toast for smooth UX feedback.",
+        "features": [
+            "🔐 User authentication (register, login, logout)",
+            "📇 Add, view, edit, and delete contacts",
+            "🔎 Search contacts by name",
+            "🧠 Form validation with Formik + Yup",
+            "💬 Real-time toast notifications"
+        ],
+        "stack": [
+            {
+              "tech": "React",
+              "usage": "Frontend framework for building UI"
+            },
+            {
+              "tech": "React Router DOM",
+              "usage": "Client-side routing"
+            },
+            {
+                "tech": "Redux Toolkit + React Redux + Redux Persist",
+                "usage": "State management and persistence"
+            },
+            {
+                "tech": "Formik + Yup",
+                "usage": "Form handling and validation"
+            },
+            {
+                "tech": "Axios",
+                "usage": "Handling HTTP requests to backend"
+            },
+            {
+                "tech": "Tailwind CSS + Material UI (MUI)",
+                "usage": "Styling and prebuilt UI components"
+            },
+            {
+              "tech": "React Hot Toast",
+              "usage": "Displaying toast notifications"
+            }
+        ],
+        "image": "/images/projects/Contact.png",
+        "link": "https://goit-react-hw-08-eight-phi.vercel.app/",
+        "gitHub": "https://github.com/ABurianenko/Contact-book",
+        "role":"Individual project"
+    },
+    {
+        "id": 6,
+        "name": "Search Movies App",
+        "shortDescription": "A movie search web app built with React that allows users to search, view, and explore detailed information about films using data from an external API",
+        "fullDescription": "Search Movies App is a single-page React application that enables users to browse popular films and search for movies by title. It fetches data from a public movie API and displays relevant information such as posters, overviews, ratings, genres, and cast. Users can navigate between movie details and cast/reviews pages, with routing managed by React Router. The interface is clean, lightweight, and intuitive, designed for quick access to film content.",
+        "features": [
+            "🔍 Search movies by title",
+            "🎞️ View movie details including overview, genres, release date, and rating",
+            "👥 See full cast and crew for selected movies",
+            "📝 Read user reviews",
+            "📖 Dynamic routing with nested routes for movie pages",
+            "🧭 SPA navigation using React Router DOM",
+            "⚙️ Data fetching from movie API"
+        ],
+        "stack": [
+            {
+                "tech": "React",
+                "usage": "Frontend framework for building the user interface"
+            },
+            {
+                "tech": "React Router DOM",
+                "usage": "Client-side routing and navigation"
+            },
+            {
+                "tech": "Axios",
+                "usage": "HTTP client for API requests"
+            },
+            {
+                "tech": "Formik",
+                "usage": "Form state management"
+            },
+            {
+                "tech": "React Hot Toast",
+                "usage": "Displaying toast-style notifications"
+            },
+            {
+                "tech": "React Loader Spinner",
+                "usage": "Visual loader components for asynchronous operations"
+            }
+        ],
+        "image": "/images/projects/Movies.png",
+        "link": "https://goit-react-hw-05-eight-tau.vercel.app/",
+        "gitHub": "https://github.com/ABurianenko/Search-movies-app",
+        "role":"Individual project"
+    },
+    {
+        "id": 7,
+        "name": "Cathouse",
+        "shortDescription": "A minimalist landing page about cats",
+        "fullDescription": "A minimalist landing page crafted with HTML and CSS, developed to practice responsive layout design using CSS Grid. The project demonstrates how to structure and align content effectively across screen sizes, without relying on JavaScript or interactive UI features.",
+        "features": [
+            "🎨 Stylish and modern landing page layout",
+            "📱 Fully responsive design for mobile, tablet, and desktop",
+            "🚀 Smooth scrolling and simple animations"
+        ],
+        "stack": [
+            {
+                "tech": "HTML5",
+                "usage": "Markup structure"
+            },
+            {
+                "tech": "CSS3",
+                "usage": "Styling and layout (CSS Grid)"
+            }
+        ],
+        "image": "/images/projects/Cathouse.png",
+        "link": "https://aburianenko.github.io/Cathouse/",
+        "gitHub": "https://github.com/ABurianenko/Cathouse",
+        "role": "Individual project"
+    },
+    {
+        "id": 8,
+        "name": "ContactBook App",
+        "shortDescription": "RESTful Node.js API with MongoDB backend and Swagger API docs, deployed on Render",
+        "fullDescription": "This project is a RESTful API built using Node.js and Express, with MongoDB as the database layer managed through Mongoose. It supports full CRUD operations and includes detailed API documentation via Swagger UI. The project is deployed on Render for easy accessibility. Ideal for backend API development and MongoDB integration practice.",
+        "features": [
+            "🔄 CRUD operations for managing contacts",
+            "🔐 User authentication and authorization",
+            "🌐 OAuth support for authentication",
+            "📄 Swagger documentation for API endpoints",
+            "🚨 Error handling and validation"
+        ],
+        "stack": [
+            {
+                "tech": "Node.js",
+                "usage": "Backend runtime environment"
+              },
+              {
+                "tech": "Express.js",
+                "usage": "Web framework for building APIs"
+              },
+              {
+                "tech": "MongoDB",
+                "usage": "NoSQL database for data storage"
+              },
+              {
+                "tech": "Mongoose",
+                "usage": "MongoDB object modeling for Node.js"
+              },
+              {
+                "tech": "Swagger UI",
+                "usage": "API documentation and testing"
+              },
+              {
+                "tech": "OAuth",
+                "usage": "Authentication and authorization protocol"
+              },
+              {
+                "tech": "JWT",
+                "usage": "Token-based user authentication"
+              },
+              {
+                "tech": "Render",
+                "usage": "Cloud hosting and deployment"
+              }
+        ],
+        "image": "/images/projects/Swagger.png",
+        "link": "https://nodejs-hw-mongodb-3nyw.onrender.com/api-docs",
+        "gitHub": "https://github.com/ABurianenko/nodejs-hw-mongodb/tree/hw7-swagger",
+        "role": "Individual project"
+    },
+    {
+        "id": 9,
+        "name": "Watchcharm",
+        "shortDescription": "A stylish landing page for a luxury watch marketplace, featuring product highlights, brand story, promotional content, and a contact form — all wrapped in a clean, elegant design",
+        "fullDescription": "Watchcharm is a responsive, modern landing page designed to promote a luxury watch marketplace. The layout includes a navigation header with section links and social media, a striking hero banner, and an About Us section that introduces the brand. Visitors can browse featured products in a catalog-style layout, view promotional offers in a sale banner, and read customer reviews. The page concludes with a functional contact form, making it easy for potential buyers to get in touch. It emphasizes premium aesthetics and user-friendly structure",
+        "features": [
+            "🧭 Sticky header with navigation and social media links",
+            "🕰️ Hero section with visual branding",
+            "📖 About Us section with brand mission",
+            "🛍️ Catalog display showcasing watches or collections",
+            "🌟 Customer reviews/testimonials section",
+            "📬 Contact form for inquiries or orders",
+            "📱 Fully responsive layout for all devices"
+        ],
+        "stack": [
+            {
+                "tech": "HTML5",
+                "usage": "Markup structure"
+            },
+            {
+                "tech": "CSS3",
+                "usage": "Styling and layout"
+            }
+        ],
+        "image": "/images/projects/Watchcharm.png",
+        "link": "https://tor10s.github.io/tors-hammer/",
+        "gitHub": "https://github.com/TOR10S/tors-hammer",
+        "role":"Team project - Reviews section"
+    },
+    {
+        "id": 10,
+        "name": "WebStudio",
+        "shortDescription": "A multi-section static website built with HTML and CSS for practicing responsive layout",
+        "fullDescription": "This project is a responsive landing page built using semantic HTML and modern CSS techniques. It showcases a company website with sections such as navigation, hero banner, services, portfolio, customer testimonials, and a contact form. The layout adjusts for desktop, tablet, and mobile devices using media queries. ",
+        "features": [
+            "🧼 Clean, semantic HTML5 structure",
+            "📱 Responsive layout (mobile-first) using Flexbox and media queries"
+        ],
+        "stack": [
+            {
+                "tech": "HTML5",
+                "usage": "Markup structure"
+            },
+            {
+                "tech": "CSS3",
+                "usage": "Styling and layout (CSS Grid)"
+            }
+        ],
+        "image": "/images/projects/Webstudio.png",
+        "link": "https://aburianenko.github.io/goit-markup-hw-06/",
+        "gitHub": "https://github.com/ABurianenko/WebStudio",
+        "role":"Individual project"
     }
 ]
