@@ -17,7 +17,7 @@
     background: transparent;
     border: none;
     z-index: 1000;
-    font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer; 
     color: var(--logo-color);
 }

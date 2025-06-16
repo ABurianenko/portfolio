@@ -2,6 +2,7 @@ import { IoLogoLinkedin, IoMailUnreadOutline } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io";
 import { CiMobile1 } from "react-icons/ci";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { BsTelegram } from "react-icons/bs";
 import s from './Profile.module.css'
 import { useMediaPoints } from "../../hooks/useMediaPoints";
 
@@ -18,8 +19,8 @@ export const Profile = () => {
                         <p className={s.position}>Front-End Developer</p>
                         <ul className={s.networkList}>
                             <li className={s.networkItem}>
-                                <a className={s.contacts} href="tel:+380636485625">
-                                    <CiMobile1 style={{ color: 'var(--service-desc-color)' }} />
+                                <a className={s.contacts} href="https://t.me/anastasiia_burianenko">
+                                    <BsTelegram style={{ color: 'var(--service-desc-color)' }} />
                                 </a>
                             </li>
                             <li className={s.networkItem}>
@@ -57,22 +58,22 @@ export const Profile = () => {
                         <ul className={s.networkList}>
                             <li className={s.networkItem}>
                                 <a href="https://www.linkedin.com/in/anastasiia-burianenko/">
-                                    <IoLogoLinkedin className={s.linkedin} />
+                                    <IoLogoLinkedin style={{ color: 'var(--service-desc-color)' }} />
                                 </a>
                             </li>
                             <li className={s.networkItem}>
                                 <a href="https://github.com/ABurianenko">
-                                    <IoLogoGithub className={s.github} />
+                                    <IoLogoGithub style={{ color: 'var(--service-desc-color)' }} />
                                 </a>
                             </li>
                         </ul>
                         <ul className={s.contactsList}>
                             <li className={s.contactsItem}>
                                 <div className={s.contactsIcon}>
-                                    <CiMobile1 />
+                                    <BsTelegram />
                                 </div>
                                 
-                                <a className={s.contacts} href="tel:+380636485625">+38 063 648 56 25</a>
+                                <a className={s.contacts} href="https://t.me/anastasiia_burianenko">@anastasiia_burianenko</a>
                             </li>
                             <li className={s.contactsItem}>
                                 <div className={s.contactsIcon}>

@@ -1,7 +1,11 @@
 .slider {
     position: relative;
-    height: 700px;
+    height: 500px;
     overflow: hidden; 
+
+    @media screen and (min-width:1240px) {
+        height: 650px;
+    }
 }
 
 .navBtn {

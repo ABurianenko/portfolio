@@ -31,13 +31,13 @@ export const Projects = () => {
         dispatch(fetchProjects());
     }, [dispatch]);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-        goToNext();
-    }, 5000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //     goToNext();
+    // }, 5000);
 
-        return () => clearInterval(interval);
-    }, [goToNext]);
+    //     return () => clearInterval(interval);
+    // }, [goToNext]);
     
       
 

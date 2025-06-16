@@ -81,15 +81,15 @@
     padding: 8px;
     display: flex;
 
-    border: 2px solid var(--submit-btn);
-    border-radius: 4px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
 
-    background-color: var(--submit-btn);
+    background-color: var(--buttonbg);
 
     font-family: var(--third-family);
     font-weight: 700;
     font-size: 14px;
-    color: var(--containerbg);
+    color: var(--button-text-color);
 
     justify-content: center;
     align-self: center;
