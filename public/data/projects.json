@@ -118,6 +118,42 @@
         "role":"Team project - Statistics Page"
     },
     {
+        "id": 11,
+        "name": "Pomodoro App",
+        "shortDescription": "A minimal, accessible Pomodoro timer built with vanilla TypeScript and Vite",
+        "fullDescription": "A minimal, accessible Pomodoro timer built with vanilla TypeScript, Vite, and an SVG/Canvas-like circular progress ring. Includes a settings modal with custom comboboxes, an audio pre-end cue, and automatic mode switching.",
+        "features": [
+            "⏱️ Three modes: Pomodoro / Short break / Long break",
+            "🔄 Auto-switching flow",
+            "🟣 Circular progress ring using progressbar.js",
+            "⚙️ Settings modal with custom comboboxes (no free text) to set durations per mode",
+            "🔔 Pre-end audio cue (plays ~N seconds before zero; configurable)",
+            "🔇 Mute/Unmute toggle for the pre-end cue"
+        ],
+        "stack": [
+            {
+                "tech": "TypeScript",
+                "usage": "strict mode"
+            },
+            {
+                "tech": "Vite",
+                "usage": "bundling/dev server"
+            },
+            {
+                "tech": "progressbar.js",
+                "usage": "timer ring"
+            },
+            {
+                "tech": "HTML/CSS",
+                "usage": "Markup structure and styling"
+            }
+        ],
+        "image": "/images/projects/pomodoro.png",
+        "link": "https://aburianenko.github.io/pomodoro-app/",
+        "gitHub": "https://github.com/ABurianenko/pomodoro-app",
+        "role": "Individual project"
+    },
+    {
         "id": 3,
         "name": "Photo Gallery",
         "shortDescription": "A responsive web app that displays a photo gallery in a grid layout, allowing users to browse images and view larger previews in a modal window",
