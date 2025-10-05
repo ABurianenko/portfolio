@@ -1,5 +1,65 @@
 [
     {
+        "id": 12,
+        "name": "LearnLingo",
+        "shortDescription": "A tutors catalog with filtering, favorites, and trial-lesson booking built with React, Redux Toolkit, and Firebase",
+        "fullDescription": "LearnLingo is a React SPA for discovering language tutors, filtering by language/level, saving favorites (with auth guard), and booking a trial lesson. Data is loaded from Firebase Realtime Database (teachers) and bookings are stored in Firestore. The app includes accessible, URL-aware modals for Auth and Booking, a global Modal wrapper with focus trap/ESC/backdrop close, sticky header-aware layouts, pagination with “Load more”, and skeleton placeholders for initial loading.",
+        "features": [
+            "👩‍🏫 Teachers list from Firebase Realtime Database",
+            "🔎 Filters: by language and level (client-side, applied before pagination)",
+            "📄 Pagination with “Load more” and smooth scroll to newly appended item",
+            "⭐ Favorites with auth guard and localStorage persistence",
+            "🔐 Auth/Login & Registration modals synced with URL routes (/login, /register) and back navigation",
+            "📅 Booking modal (react-hook-form + Yup) with required fields and success/error toasts",
+            "🗄️ Bookings written to Cloud Firestore (pending status + metadata)",
+            "🎨 Theming via CSS variables; page-scoped background for Teachers",
+            "🧱 Skeleton loaders for filters and teacher cards during first load",
+            "♿ Accessible modals: focus trap, ESC/backdrop close, returns focus to the trigger"
+        ],
+        "stack": [
+            { 
+                "tech": "React", 
+                "usage": "SPA, components, hooks" 
+            },
+            { 
+                "tech": "Redux Toolkit", 
+                "usage": "slices, thunks, memoized selectors" 
+            },
+            { 
+                "tech": "React Router", 
+                "usage": "routes for /login, /register; state.from navigation" 
+            },
+            { 
+                "tech": "Firebase Realtime Database", 
+                "usage": "teachers data source" 
+            },
+            { 
+                "tech": "Cloud Firestore", 
+                "usage": "store booking requests" 
+            },
+            { 
+                "tech": "react-hook-form", 
+                "usage": "booking/auth forms handling" 
+            },
+            { 
+                "tech": "Yup", 
+                "usage": "form validation schemas" 
+            },
+            { 
+                "tech": "react-hot-toast", 
+                "usage": "UX feedback for actions" 
+            },
+            { 
+                "tech": "CSS Modules", 
+                "usage": "scoped styling; sticky header & modal layout" 
+            }
+        ],
+        "image": "/images/projects/LearnLingo.png",
+        "link": "https://learn-lingo-alpha-eight.vercel.app/",
+        "gitHub": "https://github.com/ABurianenko/LearnLingo",
+        "role": "Individual project"
+    },
+    {
         "id": 1,
         "name": "RentalCar",
         "shortDescription": "RentalCar is a web application for viewing and booking cars",
